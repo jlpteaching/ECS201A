@@ -1,22 +1,82 @@
 :authors: Jason Lowe-Power
 
+==============================
 ECS 201A Computer Architecture
 ==============================
 
-This course is...
+Important information
+---------------------
+
+Time/Location
+~~~~~~~~~~~~~
+226 Wellman Hall
+
+Discussion: Monday 3:10-4pm
+
+Lecture: Tuesday & Thursday 1:40-3pm
+
+Instructor
+~~~~~~~~~~
+Professor Jason Lowe-Power (jlowepower@ucdavis.edu)
+
+Office hours: Wednesday 1:30-3pm, or by appointment.
+
+Office location: 3049 Kemper Hall.
+
+Teaching assistant
+~~~~~~~~~~~~~~~~~~
+Justin Perona (jlperona@ucdavis.edu)
+
+Office hours: TBD
+
+Office location: TBD
+
+Canvas
+~~~~~~
+We will be using canvas for much of the course administration.
+This document, as well as all other downloads, are available on the canvas site.
+You will use canvas for turning in your homeworks as well.
+
+Canvas URL: https://canvas.ucdavis.edu/courses/146759
+
+Piazza
+~~~~~~
+We will use piazza for class discussions outside of the classroom.
+If you haven't used piazza before, it's a cool tool that is essentially a message board for the class.
+Both I and Justin will be on piazza to answer questions.
+
+It's best to ask your questions on piazza, that way all of your classmates can see the answer instead of emailing me or Justin.
+Additionally, you might get a much faster response from one of your classmates!
+
+Other information
+~~~~~~~~~~~~~~~~~
+The lectures and discussion will be recorded.
+The videos for each class will be available on the canvas site soon after lecture.
 
 
 Pre-requisites
 --------------
-Introduction to computer architecture course (e.g., ECS 154B).
+Undergraduate computer architecture course (e.g., ECS 154B).
 
 I am going to assume you have knowledge of ISAs, simple pipelining, simple caching, and high-level computer organization.
 These basics are covered in D. A. Patterson and J. L. Hennessy, Computer Organization and Design: The Hardware/Software Interface.
+
+Some of these topics are covered in the appendices of Hennessy and Patterson.
+For instance, appendix A gives a great overview of ISA design and implications.
+If you find you do not have enough background on a topic, start by checking the appendices of the book.
 
 
 Book and reading materials
 --------------------------
 In this class we'll be closely following Hennessy and Patterson's Computer Architecture: A Quantitative Approach.
+You can find the book at the University bookstore on online.
+This is a great book.
+It's easy to read and very thorough.
+Every computer architect should have a copy!
+
+There is both a physical and a digital copy available.
+You will be doing *a lot* of reading from the book, so I suggest you choose what is most comfortable to you.
+We will also have open book quizzes (see below), and you will *not* be able to use the electronic copy during the quizzes.
 
 
 Class format
@@ -50,6 +110,8 @@ Turning in the homework consists of 3 parts:
 
 *Late assignments receive an automatic 25% reduction per day they are late.*
 
+To turn in your code and the pdf of your report, we will use the online handin with canvas.
+
 Quizzes
 ~~~~~~~
 
@@ -80,8 +142,12 @@ Late reviews will not be accepted and the time is based on when the email is rec
 I encourage students are encouraged to form study groups to discuss the papers before writing their reviews, but each student must write their own independent review.
 
 Reviews should be emailed to Prof. Jason Lowe-Power (jlowepower@ucdavis.edu) with:
+
+::
+
     Subject: [ECS201A Review] Author1 Year
     (e.g., [ECS201A Review] Moore 1998)
+
 
 The ASCII body of the message (NOT an attachment; NOT HTML; NOT PDF) should be 20 to 40 lines (maximum 3200 characters) with:
  - a short summary of the problem the paper attacks and methods used (if any),
@@ -103,4 +169,19 @@ are discussed in class.
 Grading
 -------
 
-There will be a grade breakdown!
+Half of your final grade will come from homework/projects and quizzes and the other half from the midterm and final.
+
+The midterm will be given in class on October 31st.
+The final is scheduled for Tuesday December 12th from 1-3pm.
+
+A detailed grading breakdown is below.
+
+========= ========
+Quizzes     20%
+
+Homework    30%
+
+Midterm     25%
+
+Final       35%
+========= ========
