@@ -136,34 +136,24 @@ This will give you an idea of either the history of architecture techniques disc
 Students are expected to have completed the assigned readings before attending class and actively participate in discussions.
 *For each paper, you will be required to turn in a short review by 6am Monday morning.*
 
-To facilitate great class discussions, students must submit an email review of selected papers by 6:00am before the discussion for which the paper is assigned.
-Late reviews will not be accepted and the time is based on when the email is received, not sent.
+To facilitate great class discussions, students must submit a review of selected papers by 6:00am before the discussion for which the paper is assigned.
+*Late reviews will not be accepted.*
 
-I encourage students are encouraged to form study groups to discuss the papers before writing their reviews, but each student must write their own independent review.
+I encourage students to form study groups to discuss the papers before writing their reviews, but each student must write their own independent review.
 
-Reviews should be emailed to Prof. Jason Lowe-Power (jlowepower@ucdavis.edu) with:
-
-::
-
-    Subject: [ECS201A Review] Author1 Year
-    (e.g., [ECS201A Review] Moore 1998)
-
-
-The ASCII body of the message (NOT an attachment; NOT HTML; NOT PDF) should be 20 to 40 lines (maximum 3200 characters) with:
+Reviews should be submitted in canvas.
+The review should be 20 to 40 lines (maximum 3200 characters) with:
  - a short summary of the problem the paper attacks and methods used (if any),
  - a short summary of the paper's results or key implications,
  - your opinion about what's good and bad about the paper, and
  - a topic/question for lecture
 
-Follow instructions exactly so that email filters do not lose your review.
 The last three points are key and best enable your review to stand out.
 
 Reviews will be graded on a scale of Excellent (10 points), Satisfactory (7 points), and Unsatisfactory (3 points).
 Most reviews will get a 7.
 Reviews that are too long will automatically receive an Unsatisfactory grade.
-Reviews that fail to exactly follow the subject line rules will not be graded!
-The purpose here is to get students to read (and discuss) papers before they
-are discussed in class.
+The purpose here is to get students to read (and discuss) papers before they are discussed in class.
 
 
 Grading
