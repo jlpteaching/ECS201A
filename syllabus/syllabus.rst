@@ -78,6 +78,8 @@ There is both a physical and a digital copy available.
 You will be doing *a lot* of reading from the book, so I suggest you choose what is most comfortable to you.
 We will also have open book quizzes (see below), and you will *not* be able to use the electronic copy during the quizzes.
 
+An online version of the book is available on-campus through ACM: http://dl.acm.org/citation.cfm?id=1999263.
+You may have to "sign-in".
 
 Class format
 ------------
