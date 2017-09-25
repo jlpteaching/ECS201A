@@ -4,4 +4,4 @@ pdfrw==0.4
 Pillow==4.2.1
 Pygments==2.2.0
 reportlab==3.4.0
-rst2pdf==0.93.dev0
+rst2pdf==0.93
