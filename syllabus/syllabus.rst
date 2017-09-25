@@ -213,7 +213,10 @@ A detailed grading breakdown is below.
 ========= =====
 Quizzes    20%
 
-Homework   30%
+Homework   20%
+
+Reviews    10%
+--------- -----
 
 Midterm    20%
 
