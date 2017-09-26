@@ -48,7 +48,20 @@ You will go through the following topics:
  - Understanding the statistics and output of gem5.
  - Looking at the default configuration scripts.
 
+gem5 runs on Linux and Mac OS X.
+There is no support for Windows.
+If you use Windows, consider running a distribution of Linux in a VM or dual-booting.
+(This will be a good idea for the rest of your time here as a student at Davis, as well.)
+
+I am currently looking into having gem5 run on the CSIF_ machines.
+At the moment, gem5 will not run on them.
+I will let everyone know if we can or cannot get gem5 to work in the CSIF.
+
+As mentioned in the tutorial, it takes a while to compile gem5.
+You should download and start the compilation process before doing anything else.
+
 __ `tutorial`_
+.. _CSIF: http://csifdocs.cs.ucdavis.edu/
 
 Step 2: Sieve of Eratosthenes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -76,7 +89,7 @@ Finally, you will describe the changes in performance between your tests.
 **Choose an appropriate input size.**
 You should use something large enough that the application is interesting, but not too large that gem5 takes more than 10 minutes to execute a simulation
 I found that roughly 1 000 000 takes five minutes, and is a good compromise.
-*Note: the* ``MinorCPU`` *model (the next step) takes about 10x longer than* ``TimingSimpleCPU`` *takes.*
+Note: the ``MinorCPU`` model (the next step) takes about 10x longer than ``TimingSimpleCPU`` takes.
 
 2. Change the CPU model from ``TimingSimpleCPU`` to ``MinorCPU``.
 
@@ -86,9 +99,10 @@ Hint: you may want to add a command line parameter to control the CPU model.
 
 Hint: again, you may want to add a command line parameter for the frequency.
 
-4. Change the memory configuration from ``DDR3_1600_x64`` to ``DDR3_2133_x64``, and ``LPDDR2_S4_1066_x32``, with both CPU models.
+4. Change the memory configuration from ``DDR3_1600_x64`` to ``DDR3_2133_8x8`` and ``LPDDR2_S4_1066_1x32``, with both CPU models.
 
-This will model DDR3 with a faster clock, and LPDDR2, which is low-power DRAM often found in mobile devices.
+The first option models DDR3 with a faster clock.
+The second option models LPDDR2, which is low-power DRAM often found in mobile devices.
 
 Step 4: Report
 ~~~~~~~~~~~~~~
