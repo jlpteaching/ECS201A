@@ -66,6 +66,13 @@ Additionally, you might get a much faster response from one of your classmates!
 
 .. _Piazza: https://piazza.com/class/j7z54vw7a5r2sl
 
+Exam Conflicts
+~~~~~~~~~~~~~~
+
+The exam schedule is available on Canvas_.
+Per official UC Davis policy (`http://catalog.ucdavis.edu/academicinfo/exams.html <http://catalog.ucdavis.edu/academicinfo/exams.html>`_),
+if you have a a letter from the student disability center or have any conflicts with exam times for religious observances, you must notify me **by the 4th class (Oct 5th)**.
+
 Other Information
 ~~~~~~~~~~~~~~~~~
 
@@ -80,7 +87,7 @@ Undergraduate computer architecture course (e.g., ECS 154B).
 I am going to assume you have knowledge of ISAs, simple pipelining, simple caching, and high-level computer organization.
 These basics are covered in D. A. Patterson and J. L. Hennessy, `Computer Organization and Design: The Hardware/Software Interface`_.
 
-Some of these topics are covered in the appendices of Hennessy and Patterson.
+Some of these topics are covered in the appendices of out Hennessy and Patterson book.
 For instance, appendix A gives a great overview of ISA design and implications.
 If you find you do not have enough background on a topic, start by checking the appendices of the book.
 
