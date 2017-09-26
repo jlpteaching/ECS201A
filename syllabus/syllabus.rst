@@ -86,28 +86,6 @@ If you find you do not have enough background on a topic, start by checking the 
 
 .. _`Computer Organization and Design: The Hardware/Software Interface`: http://dl.acm.org/citation.cfm?id=2568134
 
-Book and Reading Materials
---------------------------
-
-In this class we'll be closely following `Computer Architecture: A Quantitative Approach`_ by J. L. Hennessy and D. A. Patterson.
-You can find the book at the `university bookstore`_ or online.
-This is a great book.
-It's easy to read and very thorough.
-Every computer architect should have a copy!
-
-There is both a physical and a digital copy available.
-You will be doing *a lot* of reading from the book, so I suggest you choose what is most comfortable to you.
-We will also have open book quizzes (see below_), and you will *not* be able to use the electronic copy during the quizzes.
-
-A PDF version of the book is available through ACM__.
-You can get it free on a UC Davis network or through the `library VPN`_.
-
-.. _`Computer Architecture: A Quantitative Approach`: http://dl.acm.org/citation.cfm?id=1999263
-.. _university bookstore: http://ucdavisstores.com/CourseMaterials
-
-__ `Computer Architecture: A Quantitative Approach`_
-.. _library VPN: https://www.library.ucdavis.edu/service/connect-from-off-campus/
-
 Class Format
 ------------
 
@@ -182,7 +160,7 @@ To facilitate great class discussions, students must submit a review of selected
 
 I encourage students to form study groups to discuss the papers before writing their reviews, but each student must write their own independent review.
 
-Reviews will be submitted through Canvas.
+Reviews will be submitted through Canvas via a text-only submission.
 The review should be 20 to 40 lines (maximum 3200 characters) with:
 
  - a short summary of the problem the paper attacks and methods used, if any.
@@ -222,3 +200,91 @@ Midterm    20%
 
 Final      30%
 ========= =====
+
+Reading List
+------------
+
+Book
+~~~~~~
+
+In this class we'll be closely following `Computer Architecture: A Quantitative Approach`_ by J. L. Hennessy and D. A. Patterson.
+You can find the book at the `university bookstore`_ or online.
+This is a great book.
+It's easy to read and very thorough.
+Every computer architect should have a copy!
+
+There is both a physical and a digital copy available.
+You will be doing *a lot* of reading from the book, so I suggest you choose what is most comfortable to you.
+We will also have open book quizzes (see below_), and you will *not* be able to use the electronic copy during the quizzes.
+
+A PDF version of the book is available through ACM__.
+You can get it free on a UC Davis network or through the `library VPN`_.
+
+.. _`Computer Architecture: A Quantitative Approach`: http://dl.acm.org/citation.cfm?id=1999263
+.. _university bookstore: http://ucdavisstores.com/CourseMaterials
+
+__ `Computer Architecture: A Quantitative Approach`_
+.. _library VPN: https://www.library.ucdavis.edu/service/connect-from-off-campus/
+
+Reading List
+~~~~~~~~~~~~
+
+We will be reading about one paper per week from the current computer architecture literature.
+Each discussion you will be assigned one paper to review, although there may be other optional papers for you to read or skim.
+The optional papers are not *required* to review, but they will be discussed in class and will further contribute to your understanding.
+
+Below are links to the paper that will work if you are on campus or logged in with the `library VPN`_.
+You can find pdfs of these paper on the Canvas_ site.
+
+Review 1 (due Oct 2)
+********************
+G. E. Moore, "Cramming more components onto integrated circuits, Reprinted from Electronics, volume 38, number 8, April 19, 1965, pp.114 ff.," in IEEE Solid-State Circuits Society Newsletter, vol. 11, no. 5, pp. 33-35, Sept. 2006.
+`http://ieeexplore.ieee.org/document/4785860
+<http://ieeexplore.ieee.org/document/4785860>`_.
+
+Optional extra reading:
+
+R. H. Dennard, F. H. Gaensslen, V. L. Rideout, E. Bassous and A. R. LeBlanc, "Design of ion-implanted MOSFET's with very small physical dimensions," in IEEE Journal of Solid-State Circuits, vol. 9, no. 5, pp. 256-268, Oct 1974.
+`http://ieeexplore.ieee.org/document/1050511/ <http://ieeexplore.ieee.org/document/1050511/>`_
+
+Review 2 (due Oct 9)
+********************
+Mark D. Hill, Michael R. Marty. Amdahl's Law in the Multicore Era. IEEE Computer. July 2008.
+`http://research.cs.wisc.edu/multifacet/papers/ieeecomputer08_amdahl_multicore.pdf <http://research.cs.wisc.edu/multifacet/papers/ieeecomputer08_amdahl_multicore.pdf>`_
+
+Website for the paper: `http://research.cs.wisc.edu/multifacet/amdahl/ <http://research.cs.wisc.edu/multifacet/amdahl/>`_
+
+Review 3 (due Oct 16)
+*********************
+
+TBD
+
+Review 4 (due Oct 23)
+*********************
+
+TBD
+
+Review 5 (due Nov 6)
+********************
+
+TBD
+
+Review 6 (due Nov 13)
+*********************
+
+TBD
+
+Review 7 (due Nov 20)
+*********************
+
+TBD
+
+Review 8 (due Nov 27)
+*********************
+
+TBD
+
+Review 9 (due Dec 4)
+********************
+
+TBD
