@@ -266,6 +266,8 @@ You can find pdfs of these paper on the Canvas_ site.
 Schedule
 ~~~~~~~~~
 
+See pdf on Canvas_ if the table doesn't appear below.
+
 .. csv-table:: Schedule
     :widths: 13, 10, 20, 30
     :file: schedule.csv
