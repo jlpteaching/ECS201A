@@ -1,0 +1,50 @@
+Lecture,28-Sep,Intro,
+,,HW 1 out: Measuring performance,"H&P: 1.1-1.3, Appendix L.1-L.2"
+Discussion,2-Oct,Paper discussion + background quiz,
+,,Review: Moore's Law,http://ieeexplore.ieee.org/document/4785860/
+,,Optional: Dennard Scaling,http://ieeexplore.ieee.org/document/1050511/
+Lecture,3-Oct,Trends in computing (Technology),H&P: 1.4-1.7
+Lecture,5-Oct,Measuring,H&P: 1.8-1.12
+Discussion,9-Oct,Paper discussion + HW 1,
+,,Review: Amdahl's law in the multicore era,http://ieeexplore.ieee.org/document/4563876/
+,,Read: Retrospective,http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7945175
+,,HW 2 out: Cache and memory systems,
+Lecture,10-Oct,Cache refresher,"H&P: B.1-B.3, 2.1-2.2"
+Lecture,12-Oct,Cache optimizations,"H&P: B.1-B.3, 2.1-2.2"
+Discussion,16-Oct,Paper discussion + Quiz 1,
+,,Review:,
+Lecture,17-Oct,Main memory and technology,H&P: 2.3
+Lecture,19-Oct,Virtualization and protection,"H&P: 2.4-2.8, B.4-B.5"
+Discussion,23-Oct,Paper discussion + HW 2,
+,,Review: Virtual Memory on Contemporary Processors,http://ieeexplore.ieee.org/document/710872/?arnumber=710872
+,,HW 3 out: ILP in gem5,
+Lecture,24-Oct,Pipelining refresher,
+Lecture,26-Oct,Out-of-order execution,
+Discussion,30-Oct,Slack/Review for midterm,
+Lecture,31-Oct,Midterm,
+Lecture,2-Nov,Limits to ILP,
+Discussion,6-Nov,Paper discussion + HW 3,
+,,"Review: Dynamic speculation and synchronization of data dependences
+Dynamic speculation and synchronization of data dependences",https://doi.org/10.1145/264107.264189
+,,HW 4 out: GPU programming,
+Lecture,7-Nov,Data-level parallelism,
+Lecture,9-Nov,Vector machines + SIMD,
+Discussion,13-Nov,Paper discussion + Quiz 2,
+,,Review: The GPU Computing Era,https://doi.org/10.1109/MM.2010.41
+Lecture,14-Nov,GPUs,
+Lecture,16-Nov,Thread-level parallelism,
+Discussion,20-Nov,Paper discussion + HW 4,
+,,Review:,
+,,HW 5 out: Parallel programming and impact of coherence,
+Lecture,21-Nov,Coherence,
+Thanksgiving NO CLASS,,,
+Discussion,27-Nov,Paper discussion + Quiz 3,
+,,Review:,
+Lecture,28-Nov,Sync. And consistency,
+Lecture,30-Nov,Warehouse-scale computing,
+Discussion,4-Nov,Paper discussion + HW 5,
+,,Review: Killer microsecond,https://dl.acm.org/citation.cfm?id=3015146
+Lecture,5-Dec,Reliability and other trends,
+Lecture,7-Dec,Slack/Review for final,
+,,,
+Final,12-Dec,,

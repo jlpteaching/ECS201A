@@ -228,8 +228,8 @@ Any violations of this policy will result in reporting the violating student(s) 
 .. _`Student Support and Judicial Affairs`: http://sja.ucdavis.edu/
 
 
-Reading List
-------------
+Reading List and Schedule
+--------------------------
 
 Book
 ~~~~~~
@@ -263,55 +263,9 @@ The optional papers are not *required* to review, but they will be discussed in 
 Below are links to the paper that will work if you are on campus or logged in with the `library VPN`_.
 You can find pdfs of these paper on the Canvas_ site.
 
-Review 1 (due Oct 2)
-********************
-G. E. Moore, "Cramming more components onto integrated circuits, Reprinted from Electronics, volume 38, number 8, April 19, 1965, pp.114 ff.," in IEEE Solid-State Circuits Society Newsletter, vol. 11, no. 5, pp. 33-35, Sept. 2006.
-`http://ieeexplore.ieee.org/document/4785860
-<http://ieeexplore.ieee.org/document/4785860>`_.
+Schedule
+~~~~~~~~~
 
-Optional extra reading:
-
-R. H. Dennard, F. H. Gaensslen, V. L. Rideout, E. Bassous and A. R. LeBlanc, "Design of ion-implanted MOSFET's with very small physical dimensions," in IEEE Journal of Solid-State Circuits, vol. 9, no. 5, pp. 256-268, Oct 1974.
-`http://ieeexplore.ieee.org/document/1050511/ <http://ieeexplore.ieee.org/document/1050511/>`_
-
-Review 2 (due Oct 9)
-********************
-Mark D. Hill, Michael R. Marty. Amdahl's Law in the Multicore Era. IEEE Computer. July 2008.
-`http://research.cs.wisc.edu/multifacet/papers/ieeecomputer08_amdahl_multicore.pdf <http://research.cs.wisc.edu/multifacet/papers/ieeecomputer08_amdahl_multicore.pdf>`_
-
-Website for the paper: `http://research.cs.wisc.edu/multifacet/amdahl/ <http://research.cs.wisc.edu/multifacet/amdahl/>`_
-
-Review 3 (due Oct 16)
-*********************
-
-TBD
-
-Review 4 (due Oct 23)
-*********************
-
-TBD
-
-Review 5 (due Nov 6)
-********************
-
-TBD
-
-Review 6 (due Nov 13)
-*********************
-
-TBD
-
-Review 7 (due Nov 20)
-*********************
-
-TBD
-
-Review 8 (due Nov 27)
-*********************
-
-TBD
-
-Review 9 (due Dec 4)
-********************
-
-TBD
+.. csv-table:: Schedule
+    :widths: 13, 10, 20, 30
+    :file: schedule.csv
