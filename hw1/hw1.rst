@@ -53,9 +53,11 @@ Platforms
 """""""""
 
 gem5 runs on Linux and OS X.
-There is no support for Windows.
+There is limited support for Windows running the `Windows Subsystem for Linux`_.
 If you use Windows, consider running a distribution of Linux in a VM or dual-booting.
 (This will be a good idea for the rest of your time here as a student at Davis, as well.)
+
+.. _`Windows Subsystem for Linux`: https://msdn.microsoft.com/commandline/wsl/about
 
 I am currently looking into having gem5 run on the CSIF_ machines.
 At the moment, gem5 will not run on them.
