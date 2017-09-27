@@ -212,6 +212,22 @@ Midterm    20%
 Final      30%
 ========= =====
 
+
+Academic misconduct
+--------------------
+
+Academic misconduct is a serious issue.
+You can find the official UC Davis policy on the `Student Support and Judicial Affairs`_ website: `http://sja.ucdavis.edu/ <http://sja.ucdavis.edu/>`_.
+
+Importantly, you are expected to *cite all of the work you reference*.
+Any ideas that are not specifically yours or generally known (e.g., caches hold data) should have a citation.
+When in doubt, cite.
+
+Any violations of this policy will result in reporting the violating student(s) to the office of `Student Support and Judicial Affairs`_.
+
+.. _`Student Support and Judicial Affairs`: http://sja.ucdavis.edu/
+
+
 Reading List
 ------------
 
