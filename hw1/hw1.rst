@@ -37,7 +37,7 @@ This assignment must be done alone.
 Step 1: gem5 Tutorial, Part I
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Go through the introduction and part I of the `gem5 tutorial`__.
+Go through the Introduction and Part I of the `gem5 tutorial`__.
 You will go through the following topics:
 
  - Downloading and building gem5.
@@ -191,7 +191,7 @@ Archive the following into a GZ or TGZ file:
 
  - Your sieve .cpp file.
  - Your final gem5 confguration script from the tutorial.
- - Your statistics files from your runs of your sieve.
+ - Your statistics files (stats.txt) from your runs of your sieve.
 
 Submit your archive as well as the PDF of your report to Canvas.
 
@@ -231,5 +231,6 @@ Error: script doesn't take any positional arguments
     ...
     Error: script doesn't take any positional arguments
 
-If your sieve program needs a command line argument to run, then you need to pass the options with the ``--options`` flag.
-Use the ``--help`` flag for the script that you are running for more information.
+If your sieve program needs a command line argument to run, then you need to pass the options through the process.cmd parameter.
+This parameter is like the argv[] in a normal C program.
+You can also add a command line option to your script to pass options through to the simulated process.
