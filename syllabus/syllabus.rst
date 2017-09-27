@@ -28,7 +28,7 @@ Office Location: 3049 Kemper Hall
 
 Virtual office hours via Google Hangouts. Check `my calendar`_ for each week's link: `http://goo.gl/hmtAH <http://goo.gl/hmtAH>`_.
 
-.. _`my calandar`: http://goo.gl/hmtAH
+.. _`my calendar`: http://goo.gl/hmtAH
 
 Teaching Assistant
 ~~~~~~~~~~~~~~~~~~
