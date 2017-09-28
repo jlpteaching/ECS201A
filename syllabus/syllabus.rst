@@ -192,16 +192,19 @@ It would be too easy for you to just Ctrl-F the answer!
 (Note: I hate killing trees.
 If you have a solution that keeps the spirit of open book quizzes, while allowing electronic versions, I am open to amending this policy.)
 
-Grading
--------
-
-Half of your final grade will come from homework, paper reviews, and quizzes.
-The other half will come from the midterm and final.
+Midterm and Final
+~~~~~~~~~~~~~~~~~
 
 The midterm will be given in class on 31 October 2017.
 
 The final is scheduled for Tuesday, 12 December 2017, from 1:00 - 3:00 PM.
 The location is the same as the lecture room.
+
+Grading
+-------
+
+Half of your final grade will come from homework, paper reviews, and quizzes.
+The other half will come from the midterm and final.
 
 A detailed grading breakdown is below.
 
