@@ -107,13 +107,16 @@ __ `Sieve of Eratosthenes`_
 Step 3: Use gem5
 ~~~~~~~~~~~~~~~~
 
-Now, you will run your application in gem5.
+Now, you will run your application in gem5 with the configuration script you made in the tutorial.
 You will change the CPU model, frequency, and memory configuration while testing your sieve program.
 
 1. Run gem5 with Your Sieve
 """""""""""""""""""""""""""
 
 Run your sieve program in gem5 instead of the 'hello' example.
+You will need to change the location in your configuration script to where your static binary is located.
+*Do not use se.py or any other configuration script.
+Use the one you made in the tutorial.*
 Save the statistics file generated from this run, and for every run after this one.
 
 **Choose an appropriate input size.**
@@ -121,7 +124,6 @@ You should use something large enough that the application is interesting, but n
 I found that somewhere around 1 000 000 takes about 5 minutes, which is a good compromise.
 
 Note: the ``MinorCPU`` model (the next step) takes about 10x longer than ``TimingSimpleCPU`` takes.
-
 
 2. Vary the CPU Model
 """""""""""""""""""""
@@ -146,7 +148,8 @@ Change the memory configuration from ``DDR3_1600_8x8`` to:
  - ``LPDDR2_S4_1066_1x32``, which models LPDDR2, low-power DRAM often found in mobile devices.
  - ``HBM_1000_4H_1x64``, which models High Bandwidth Memory, used in GPUs and network devices.
 
-Use both CPU models. Leave the frequency fixed at 4 GHz.
+Use both CPU models.
+Leave the frequency fixed at 4 GHz.
 
 Hint: you may want to add a command line parameter to control the memory configuration.
 
@@ -223,16 +226,11 @@ NameError: name 'MinorCPU' is not defined
 You did not compile gem5 with the flag mentioned in the `compilation instructions`_.
 Recompile gem5 with the flag and try again.
 
-Error: script doesn't take any positional arguments
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Cannot change the sieve program limit in gem5
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-::
+If your sieve program needs a command line argument to run, then you need to pass the options through the ``process.cmd`` parameter.
+You can add another element to the list assigned to ``process.cmd``.
+This parameter is like ``argv[]`` in a normal C program.
 
-    $ ./build/X86/gem5.opt ...
-    gem5 Simulator System.  http://gem5.org
-    ...
-    Error: script doesn't take any positional arguments
-
-If your sieve program needs a command line argument to run, then you need to pass the options through the process.cmd parameter.
-This parameter is like the argv[] in a normal C program.
 You can also add a command line option to your script to pass options through to the simulated process.
