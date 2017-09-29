@@ -51,13 +51,13 @@ You will go through the following topics:
  - Understanding the statistics and output of gem5.
  - Looking at the default configuration scripts.
 
+
+There are YouTube videos of me giving lectures on different parts of the tutorial.
+The video for `Part I`_ will be helpful to watch.
+You can find all of the videos on `my channel`_.
+
 __ `tutorial`_
-
-There are youtube videos of me giving lectures on Part I of the tutorial.
-You can find all of the videos on `my channel`_ or just `Part I`_.
-
 .. _`my channel`: https://www.youtube.com/channel/UCBDXDuN_5XcmntoE-dnQPbQ
-
 .. _`Part I`: https://www.youtube.com/watch?v=5UT41VsGTsg
 
 Platforms
@@ -200,16 +200,20 @@ It should contain answers to the following questions:
 #. If you were to use a different application, do you think your conclusions would change? Why?
 
 Extra Credit (not required)
-"""""""""""""""""""""""""""
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Complete the following for extra credit.
-This involves digging into gem5 on your own some.
-There is (currently) no simple tutorial to walk through to accomplish this (thus it's extra).
+This involves some digging into gem5 on your own.
+There is (currently) no simple tutorial to walk through to accomplish this, thus it's extra credit.
 
-gem5 has support for annotating your binary with special "region of interest" (ROI) magic instructions. See gem5/util/m5 and gem5/include/gem5 for more information.
+gem5 has support for annotating your binary with special "region of interest" (ROI) magic instructions.
+See the folders ``gem5/util/m5`` and ``gem5/include/gem5`` in the gem5 repository for more information.
 Annotate your binary with ROI instructions and re-run the comparison between the MinorCPU at 1 GHz and 2 GHz.
 
-Do you see a different result than before? If so, why? Which result is more "correct" (i.e., if someone asked you which system you should use, which methodology gives you a more reliable answer)?
+Add answers to the following questions to your report.
+
+7. Do you see a different result than before? If so, why?
+8. Which result is more "correct" (i.e., if someone asked you which system you should use, which methodology gives you a more reliable answer)?
 
 .. _submission:
 
