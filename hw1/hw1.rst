@@ -17,6 +17,10 @@ Remember to bring a *paper* copy of your report to class.
 Overview
 --------
 
+The purpose of this assignment is dualfold.
+First, to expose you to gem5, which we will use more heavily later in the semester.
+Second, to give you experience measuring performance on different systems and comparing and contrasting those systems.
+
 For this assignment, you will go through the first few parts of the gem5_ tutorial by yourself.
 gem5 is a system simulator.
 It is a modular platform for computer-system architecture research, encompassing system-level architecture as well as processor micro-architecture.
@@ -48,6 +52,13 @@ You will go through the following topics:
  - Looking at the default configuration scripts.
 
 __ `tutorial`_
+
+There are youtube videos of me giving lectures on Part I of the tutorial.
+You can find all of the videos on `my channel`_ or just `Part I`_.
+
+.. _`my channel`: https://www.youtube.com/channel/UCBDXDuN_5XcmntoE-dnQPbQ
+
+.. _`Part I`: https://www.youtube.com/watch?v=5UT41VsGTsg
 
 Platforms
 """""""""
@@ -181,11 +192,24 @@ Include a PDF named ``report.pdf`` in your submission.
 This file will contain your observations and conclusions from the experiment.
 It should contain answers to the following questions:
 
+#. What metric should you use to compare the performance between different system configurations? Why?
 #. Which CPU model is more sensitive to changing the CPU frequency? Why do you think so?
 #. Is the sieve application more sensitive to the CPU model or the CPU frequency? Why?
 #. Which CPU model is more sensitive to the memory technology? Why?
 #. Is the sieve application more sensitive to the CPU model, the memory technology, or CPU frequency? Why?
 #. If you were to use a different application, do you think your conclusions would change? Why?
+
+Extra Credit (not required)
+"""""""""""""""""""""""""""
+
+Complete the following for extra credit.
+This involves digging into gem5 on your own some.
+There is (currently) no simple tutorial to walk through to accomplish this (thus it's extra).
+
+gem5 has support for annotating your binary with special "region of interest" (ROI) magic instructions. See gem5/util/m5 and gem5/include/gem5 for more information.
+Annotate your binary with ROI instructions and re-run the comparison between the MinorCPU at 1 GHz and 2 GHz.
+
+Do you see a different result than before? If so, why? Which result is more "correct" (i.e., if someone asked you which system you should use, which methodology gives you a more reliable answer)?
 
 .. _submission:
 
