@@ -142,7 +142,7 @@ Turning in the homework consists of three parts:
 #. Turning in a PDF of your report before discussion begins on the due date.
 #. Bringing a *paper* copy of your report to class.
 
-To turn in your code and your PDF report, we will use Canvas.
+To turn in your code and your PDF report, we will use Canvas_.
 
 *Late homeworks receive an automatic 25% reduction per day they are late.
 Homeworks will not be accepted for late submission four days after the due date.*
@@ -192,16 +192,19 @@ It would be too easy for you to just Ctrl-F the answer!
 (Note: I hate killing trees.
 If you have a solution that keeps the spirit of open book quizzes, while allowing electronic versions, I am open to amending this policy.)
 
-Grading
--------
-
-Half of your final grade will come from homework, paper reviews, and quizzes.
-The other half will come from the midterm and final.
+Midterm and Final
+~~~~~~~~~~~~~~~~~
 
 The midterm will be given in class on 31 October 2017.
 
 The final is scheduled for Tuesday, 12 December 2017, from 1:00 - 3:00 PM.
 The location is the same as the lecture room.
+
+Grading
+-------
+
+Half of your final grade will come from homework, paper reviews, and quizzes.
+The other half will come from the midterm and final.
 
 A detailed grading breakdown is below.
 
@@ -237,8 +240,8 @@ Any violations of this policy will result in reporting the violating student(s) 
 Reading List and Schedule
 --------------------------
 
-Book
-~~~~
+Textbook
+~~~~~~~~
 
 In this class we'll be closely following `Computer Architecture: A Quantitative Approach`_ by J. L. Hennessy and D. A. Patterson.
 You can find the book at the `university bookstore`_ or online.
@@ -264,7 +267,7 @@ Reading List
 ~~~~~~~~~~~~
 
 We will be reading about one paper per week from the current computer architecture literature.
-Each discussion you will be assigned one paper to review, although there may be other optional papers for you to read or skim.
+Each discussion you will be assigned at least one paper to review, although there may be other optional papers for you to read or skim.
 You are not *required* to review the optional papers, but they will be discussed in class and will further contribute to your understanding.
 
 The `schedule below`_ has links to the papers that will work if you are on campus or logged in with the `library VPN`_.
