@@ -210,6 +210,15 @@ gem5 has support for annotating your binary with special "region of interest" (R
 See the folders ``gem5/util/m5`` and ``gem5/include/gem5`` in the gem5 repository for more information.
 Annotate your binary with ROI instructions and re-run the comparison between the MinorCPU at 1 GHz and 2 GHz.
 
+Note: to compile you need to make two changes to your g++ command.
+First, you need to add the include search path (-I<your gem5 path>/include).
+Second, you need to add the x86 assembly file to the list of files for gcc to compile (<your gem5 path>/util/m5/m5op_x86.S).
+
+Hint: If you use ROI annotations, you'll need to tell gem5 to exit simulation when encoutering ROI annoations.
+You can find this option for the System SimObject (see src/sim/System.py).
+Then, you will need to modify your python run script.
+A second (possibly easier) option is to use the dump_reset_stats magic instruction.
+
 Add answers to the following questions to your report.
 
 7. Do you see a different result than before? If so, why?
