@@ -101,8 +101,17 @@ First, you will modify the simple cache implementation in gem5 to count the numb
 For this, you will use the gem5 ``Stats`` package.
 You can use the ``hits`` and ``misses`` statistics that are already part of the SimpleCache as examples for gem5 statistics.
 
-You will need to make two changes in the ``simple_cache.cc`` file.
-You will need to add statistics for the compulsory misses to the ``insertFA()`` and ``insertDM()`` functions.
+You will need to make a couple of changes in the ``simple_cache.cc`` and ``simple_cache.hh`` files.
+You will need to add statistics for the compulsory misses to the ``insert()`` function.
+You may find using a `std::set`_ useful.
+
+Additionally, in order to count the cold misses for *just the region of interest*, you will need to fill in the function ``resetColdMisses()``.
+This function is called whenever the stats are reset (e.g., before the beginning of the ROI in matrix multiply).
+
+I have included the statistic in the code already (the variable ``coldMisses``).
+You only have to add a structure to track the cold misses and the logic to increment the ``coldMisses`` statistic.
+
+.. _std::set: http://en.cppreference.com/w/cpp/container/set
 
 Fully Associative Cache Experiments
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
