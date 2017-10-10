@@ -1,6 +1,11 @@
 :Author: Jason Lowe-Power
 :Editor: Justin Perona
 
+.. _Canvas: https://canvas.ucdavis.edu/courses/146759
+.. _Gradescope: https://gradescope.com/courses/11391
+.. _Piazza: https://piazza.com/class/j7z54vw7a5r2sl
+.. _Media Gallery: https://canvas.ucdavis.edu/courses/146759/external_tools/970
+
 =========================================
 ECS 201A - Advanced Computer Architecture
 =========================================
@@ -48,16 +53,12 @@ We will be using Canvas_ for much of the course administration.
 This document, as well as all other downloads, are available on the Canvas site.
 You will use Canvas for turning in your homeworks and paper reviews.
 
-.. _Canvas: https://canvas.ucdavis.edu/courses/146759
-
 Gradescope
 ~~~~~~~~~~
 
 We will use Gradescope_ for quizzes, the midterm, and the final.
 Gradescope gives you a graded PDF version of your test, along with a rubric, immediately after we're done grading.
 You will receive an email from Gradescope to make your account after we grade the first quiz.
-
-.. _Gradescope: https://gradescope.com/courses/11391
 
 Piazza
 ~~~~~~
@@ -66,18 +67,17 @@ We will use Piazza_ for class discussions outside of the classroom.
 If you haven't used Piazza before, it's a cool tool that is essentially a message board for the class.
 Both Justin and I will be on Piazza to answer questions.
 
-It's best to ask your questions on Piazza, that way all of your classmates can see the answer instead of emailing Justin or me.
+It's best to ask your questions on Piazza.
+That way, all of your classmates can see the answer instead of emailing Justin or me.
 Additionally, you might get a much faster response from one of your classmates!
-
-.. _Piazza: https://piazza.com/class/j7z54vw7a5r2sl
 
 Exam Conflicts
 ~~~~~~~~~~~~~~
 
-The exam schedule is available on Canvas_.
+The exam schedule is available on Canvas_, or below_.
 Per `official UC Davis policy`_, if you have an accommodation request from the `Student Disability Center`_, or have any conflicts with exam times for religious observances, you must notify me **by the fourth class, 5 October 2017**.
 
-.. _official UC Davis policy: http://catalog.ucdavis.edu/academicinfo/exams.html <http://catalog.ucdavis.edu/academicinfo/exams.html
+.. _official UC Davis policy: http://catalog.ucdavis.edu/academicinfo/exams.html
 .. _Student Disability Center: https://sdc.ucdavis.edu/
 
 Other Information
@@ -86,9 +86,7 @@ Other Information
 The lectures and discussion will be recorded.
 The videos for each class will be available on Canvas_ soon after the lecture.
 Check the `Media Gallery`_ page on Canvas for the lecture videos.
-Note: you will need to have third-party cookies enabled to access the videos.
-
-.. _Media Gallery: https://canvas.ucdavis.edu/courses/146759/external_tools/970
+You will need to have third-party cookies enabled to access the videos.
 
 Prerequisites
 -------------
@@ -113,7 +111,7 @@ Lectures (Tuesday, Thursday 1:40 - 3:00 PM)
 Our lecture time will be a traditional lecture structure.
 You are expected to have read the sections from the book *before* attending lecture.
 Lectures will not directly cover what is in the book.
-Instead, lectures will build on what you have read in the book and dive deeper into topics.
+Instead, lectures will build on what you have read in the book, and cover certain topics in more detail.
 
 Discussion (Monday 3:10 - 4:00 PM)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -124,7 +122,7 @@ Discussions will be used for three things:
 #. Discussing the homeworks.
 #. Short quizzes.
 
-Each discussion class will be split between discussing the weekly paper and either a short quiz (approximately 25 minutes) or a homework discussion.
+Each discussion will be split between discussing the weekly paper and either a short quiz (approximately 25 minutes) or a homework discussion.
 
 Assignments and Tests
 ---------------------
@@ -136,11 +134,10 @@ There will be five homeworks throughout the quarter, with one due about every ot
 Homeworks will involve a programming assignment and answering a set of questions.
 Homeworks will be graded based on the *answers to the assigned questions* in the form of a short report.
 
-Turning in the homework consists of three parts:
+Turning in the homework consists of:
 
 #. Turning in your code before discussion begins on the due date.
 #. Turning in a PDF of your report before discussion begins on the due date.
-#. Bringing a *paper* copy of your report to class.
 
 To turn in your code and your PDF report, we will use Canvas_.
 
@@ -155,6 +152,7 @@ This will give you an idea of either the history of architecture techniques disc
 Students are expected to have completed the assigned readings before attending class, and actively participate in discussions.
 
 For each paper, you will be required to turn in a short review.
+The purpose of these reviews is to get students to read (and discuss) papers before they are discussed in class.
 To facilitate great class discussions, students must submit their review of the selected papers by 6:00 AM before the discussion for which the paper is assigned.
 *Late reviews will not be accepted.*
 
@@ -173,14 +171,17 @@ The last three points are key and best enable your review to stand out.
 Reviews will be graded on a scale of Excellent (10 points), Satisfactory (7 points), and Unsatisfactory (3 points).
 Most reviews will get a 7.
 Reviews that are too long will automatically receive an Unsatisfactory grade.
-The purpose here is to get students to read (and discuss) papers before they are discussed in class.
+
+Not all reviews for a paper will be graded.
+If your review is not graded, it will not count against your grade.
+If you do not submit a review, however, you will get a 0 for that review.
 
 .. _above:
 
 Quizzes
 ~~~~~~~
 
-There will be four quizzes.
+There will be four quizzes: one background quiz, and three regular quizzes.
 One will be given about every other week.
 These quizzes are meant for both you and me, to gauge your current understanding of the course.
 There will be a mix of questions from the book, and new questions.
@@ -227,15 +228,15 @@ Academic Misconduct
 --------------------
 
 Academic misconduct is a serious issue.
-You can find the official UC Davis policy on the `Student Support and Judicial Affairs`_ website.
+You can find the official UC Davis policy on the `Office of Student Support and Judicial Affairs`_ website.
 
-Importantly, you are expected to *cite all of the work you reference*.
+You are expected to *cite all of the work you reference*.
 Any ideas that are not specifically yours or generally known (e.g., caches hold data) should have a citation.
 When in doubt, cite.
 
-Any violations of this policy will result in reporting the violating student(s) to the office of `Student Support and Judicial Affairs`_.
+Any violations of this policy will result in reporting the violating student(s) to the Office of Student Support and Judicial Affairs.
 
-.. _`Student Support and Judicial Affairs`: http://sja.ucdavis.edu/
+.. _`Office of Student Support and Judicial Affairs`: http://sja.ucdavis.edu/
 
 Reading List and Schedule
 --------------------------
@@ -244,24 +245,23 @@ Textbook
 ~~~~~~~~
 
 In this class we'll be closely following `Computer Architecture: A Quantitative Approach`_ by J. L. Hennessy and D. A. Patterson.
-You can find the book at the `university bookstore`_ or online.
+You can find the book at the `university bookstore`_ or through various sites online.
 This is a great book.
 It's easy to read and very thorough.
 Every computer architect should have a copy!
 
 There is both a physical and a digital copy available.
-You will be doing *a lot* of reading from the book, so I suggest you choose what is most comfortable to you.
+You will be doing *a lot* of reading from the book, so I suggest you choose what is most comfortable for you.
 We will also have open book quizzes (see above_), and you will *not* be able to use the electronic copy during the quizzes.
 
 A PDF version of the book is available through ACM__.
-You can get it free on a UC Davis network or through the `library VPN`_.
-If you are having trouble downloading the book while on a UC Davis network, make an ACM account tied to your UC Davis email, sign in, and try to download it again.
+Getting the book through ACM requires an ACM membership and buying access to the ACM Digital Library.
+While this is an option, paper copies of the book may be cheaper elsewhere.
 
 .. _`Computer Architecture: A Quantitative Approach`: http://dl.acm.org/citation.cfm?id=1999263
-.. _university bookstore: http://ucdavisstores.com/CourseMaterials
-
+.. _university bookstore: http://ucdavisstores.com/SelectTermDept
 __ `Computer Architecture: A Quantitative Approach`_
-.. _library VPN: https://www.library.ucdavis.edu/service/connect-from-off-campus/
+
 
 Reading List
 ~~~~~~~~~~~~
@@ -273,6 +273,9 @@ You are not *required* to review the optional papers, but they will be discussed
 The `schedule below`_ has links to the papers that will work if you are on campus or logged in with the `library VPN`_.
 You can find PDFs of these papers on Canvas_.
 
+.. _library VPN: https://www.library.ucdavis.edu/service/connect-from-off-campus/
+
+.. _below:
 .. _schedule below:
 
 Schedule
