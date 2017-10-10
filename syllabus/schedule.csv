@@ -15,7 +15,7 @@ Lecture,10-Oct,Cache Refresher,"H&P: 2.1-2.2, B.1-B.3"
 Lecture,12-Oct,Cache Optimizations,"H&P: 2.1-2.2, B.1-B.3"
 Discussion,16-Oct,Quiz 1,
 ,,Paper Discussion 3,
-,,Review: TBA,TBA
+,,Review: Fundamental Latency Trade-offs in Architecting DRAM Caches, http://moin.ece.gatech.edu/papers/micro12.pdf
 Lecture,17-Oct,Main Memory and Memory Technology,H&P: 2.3
 Lecture,19-Oct,Virtualization and Protection,"H&P: 2.4-2.8, B.4-B.5"
 Discussion,23-Oct,"Homework 2 Due, Discussion",
