@@ -10,7 +10,7 @@ Discussion,9-Oct,"Homework 1 Due, Discussion",
 ,,Paper Discussion 2,
 ,,Review: Amdahl's Law in the Multicore Era,http://ieeexplore.ieee.org/document/4563876/
 ,,Review: Retrospective on Amdahl’s Law in the Multicore Era,http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7945175
-,,Homework 2 Release: Cache and Memory Systems,
+,,Homework 2 Release: Cache and Memory Systems,https://github.com/jlpteaching/17fq-cs201a/blob/master/hw2/hw2.rst
 Lecture,10-Oct,Cache Refresher,"H&P: 2.1-2.2, B.1-B.3"
 Lecture,12-Oct,Cache Optimizations,"H&P: 2.1-2.2, B.1-B.3"
 Discussion,16-Oct,Quiz 1,

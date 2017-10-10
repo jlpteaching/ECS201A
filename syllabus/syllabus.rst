@@ -67,7 +67,8 @@ We will use Piazza_ for class discussions outside of the classroom.
 If you haven't used Piazza before, it's a cool tool that is essentially a message board for the class.
 Both Justin and I will be on Piazza to answer questions.
 
-It's best to ask your questions on Piazza, that way all of your classmates can see the answer instead of emailing Justin or me.
+It's best to ask your questions on Piazza.
+That way, all of your classmates can see the answer instead of emailing Justin or me.
 Additionally, you might get a much faster response from one of your classmates!
 
 Exam Conflicts
@@ -121,7 +122,7 @@ Discussions will be used for three things:
 #. Discussing the homeworks.
 #. Short quizzes.
 
-Each discussion class will be split between discussing the weekly paper and either a short quiz (approximately 25 minutes) or a homework discussion.
+Each discussion will be split between discussing the weekly paper and either a short quiz (approximately 25 minutes) or a homework discussion.
 
 Assignments and Tests
 ---------------------
@@ -133,11 +134,10 @@ There will be five homeworks throughout the quarter, with one due about every ot
 Homeworks will involve a programming assignment and answering a set of questions.
 Homeworks will be graded based on the *answers to the assigned questions* in the form of a short report.
 
-Turning in the homework consists of three parts:
+Turning in the homework consists of:
 
 #. Turning in your code before discussion begins on the due date.
 #. Turning in a PDF of your report before discussion begins on the due date.
-#. Bringing a *paper* copy of your report to class.
 
 To turn in your code and your PDF report, we will use Canvas_.
 
@@ -234,7 +234,7 @@ You are expected to *cite all of the work you reference*.
 Any ideas that are not specifically yours or generally known (e.g., caches hold data) should have a citation.
 When in doubt, cite.
 
-Any violations of this policy will result in reporting the violating student(s) to the `Office of Student Support and Judicial Affairs`_.
+Any violations of this policy will result in reporting the violating student(s) to the Office of Student Support and Judicial Affairs.
 
 .. _`Office of Student Support and Judicial Affairs`: http://sja.ucdavis.edu/
 
@@ -251,7 +251,7 @@ It's easy to read and very thorough.
 Every computer architect should have a copy!
 
 There is both a physical and a digital copy available.
-You will be doing *a lot* of reading from the book, so I suggest you choose what is most comfortable to you.
+You will be doing *a lot* of reading from the book, so I suggest you choose what is most comfortable for you.
 We will also have open book quizzes (see above_), and you will *not* be able to use the electronic copy during the quizzes.
 
 A PDF version of the book is available through ACM__.
