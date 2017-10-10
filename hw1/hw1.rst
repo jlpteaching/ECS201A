@@ -10,16 +10,15 @@ Due: Monday, 9 October 2017 at 3:10 PM
 
 Submission of your code and your report will be done through Canvas_.
 See the submission_ section below for more information.
-Remember to bring a *paper* copy of your report to class.
 
 .. _Canvas: https://canvas.ucdavis.edu/courses/146759
 
 Overview
 --------
 
-The purpose of this assignment is dualfold.
-First, to expose you to gem5, which we will use more heavily later in the semester.
-Second, to give you experience measuring performance on different systems and comparing and contrasting those systems.
+The purpose of this assignment is dual-fold.
+First, it will expose you to gem5, which we will use more heavily later in the quarter.
+Second, it will give you experience measuring performance on different systems, and comparing and contrasting those systems.
 
 For this assignment, you will go through the first few parts of the gem5_ tutorial by yourself.
 gem5 is a system simulator.
@@ -27,7 +26,7 @@ It is a modular platform for computer-system architecture research, encompassing
 
 I wrote the tutorial_ that you will be going through.
 If you have any feedback about errors, big or small, please let me know!
-`Email me`_ with the subject "gem5-tutorial comments" with any comments or errors you find.
+`Email me`_ with the subject "gem5-tutorial comments" if you find any errors or have any comments.
 
 .. _email me: mailto:jlowepower@ucdavis.edu
 .. _gem5: http://gem5.org/Main_Page
@@ -51,7 +50,6 @@ You will go through the following topics:
  - Understanding the statistics and output of gem5.
  - Looking at the default configuration scripts.
 
-
 There are YouTube videos of me giving lectures on different parts of the tutorial.
 The video for `Part I`_ will be helpful to watch.
 You can find all of the videos on `my channel`_.
@@ -70,11 +68,15 @@ If you use Windows, consider running a distribution of Linux in a VM or dual-boo
 
 .. _`Windows Subsystem for Linux`: https://msdn.microsoft.com/commandline/wsl/about
 
-I am currently looking into having gem5 run on the CSIF_ machines.
-At the moment, gem5 will not run on them.
-I will let everyone know if we can or cannot get gem5 to work in the CSIF through an announcement.
+gem5 will run on the `CSIF machines`_.
+Your regular CSIF home directory does not have enough space to store gem5.
+After you login, you will need to switch directories to ``/home2/<username>``.
+This directory has enough space for you to work in gem5.
 
-.. _CSIF: http://csifdocs.cs.ucdavis.edu/
+The contents of ``/home2`` will be deleted shortly after the quarter ends.
+Make sure to back up anything you want to keep.
+
+.. _CSIF machines: http://csifdocs.cs.ucdavis.edu/
 
 .. _compilation instructions:
 
@@ -99,7 +101,6 @@ where ``X`` in ``-jX`` is the number of cores in your system, plus one.
 
 As mentioned in the tutorial, it takes a while to compile gem5.
 You should download and start the compilation process before doing anything else.
-
 
 Step 2: Sieve of Eratosthenes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -167,7 +168,7 @@ Hint: you may want to add a command line parameter to control the memory configu
 5. Check Your Data
 """"""""""""""""""
 
-You should have nine statistic files for the following runs:
+You should have twelve statistic files for the following runs:
 
 =============== =============== =======================
 CPU Model       Frequency (GHz) Memory
@@ -178,6 +179,9 @@ TimingSimpleCPU 4               ``DDR3_1600_8x8``
 MinorCPU        1               ``DDR3_1600_8x8``
 MinorCPU        2               ``DDR3_1600_8x8``
 MinorCPU        4               ``DDR3_1600_8x8``
+TimingSimpleCPU 4               ``DDR3_2133_8x8``
+TimingSimpleCPU 4               ``LPDDR2_S4_1066_1x32``
+TimingSimpleCPU 4               ``HBM_1000_4H_1x64``
 MinorCPU        4               ``DDR3_2133_8x8``
 MinorCPU        4               ``LPDDR2_S4_1066_1x32``
 MinorCPU        4               ``HBM_1000_4H_1x64``
@@ -193,9 +197,8 @@ This file will contain your observations and conclusions from the experiment.
 It should contain answers to the following questions:
 
 #. What metric should you use to compare the performance between different system configurations? Why?
-#. Which CPU model is more sensitive to changing the CPU frequency? Why do you think so?
-#. Is the sieve application more sensitive to the CPU model or the CPU frequency? Why?
-#. Which CPU model is more sensitive to the memory technology? Why?
+#. Which CPU model is more sensitive to changing the CPU frequency? Why?
+#. Which CPU model is more sensitive to changing the memory technology? Why?
 #. Is the sieve application more sensitive to the CPU model, the memory technology, or CPU frequency? Why?
 #. If you were to use a different application, do you think your conclusions would change? Why?
 
@@ -208,32 +211,34 @@ There is (currently) no simple tutorial to walk through to accomplish this, thus
 
 gem5 has support for annotating your binary with special "region of interest" (ROI) magic instructions.
 See the folders ``gem5/util/m5`` and ``gem5/include/gem5`` in the gem5 repository for more information.
-Annotate your binary with ROI instructions and re-run the comparison between the MinorCPU at 1 GHz and 2 GHz.
 
-Note: to compile you need to make two changes to your g++ command.
-First, you need to add the include search path (-I<your gem5 path>/include).
-Second, you need to add the x86 assembly file to the list of files for gcc to compile (<your gem5 path>/util/m5/m5op_x86.S).
+Annotate your binary with ROI instructions and re-run the comparison between ``MinorCPU`` at 1 and 2 GHz.
+To compile your annotated .cpp file, you need to make two changes to your GCC compilation command.
 
-Hint: If you use ROI annotations, you'll need to tell gem5 to exit simulation when encoutering ROI annoations.
-You can find this option for the System SimObject (see src/sim/System.py).
-Then, you will need to modify your python run script.
-A second (possibly easier) option is to use the dump_reset_stats magic instruction.
+#. Add the gem5 includes folder into your search path. You can accomplish this by adding ``-I<your gem5 path>/include`` to your compilation command.
+#. Add the x86 assembly file to the list of files for GCC to compile. You can accomplish this by adding ``<your gem5 path>/util/m5/m5op_x86.S`` to your compilation command.
+
+If you use ROI annotations, you'll need to tell gem5 to exit simulation when encountering ROI annotations.
+You can find this option in the System SimObject.
+See ``gem5/src/sim/System.py`` for more information.
+Then, you will need to modify your Python run script.
+A second, possibly easier, option is to use the ``dump_reset_stats`` magic instruction.
 
 Add answers to the following questions to your report.
 
-7. Do you see a different result than before? If so, why?
-8. Which result is more "correct" (i.e., if someone asked you which system you should use, which methodology gives you a more reliable answer)?
+6. Do you see a different result than before? If so, why?
+7. Which result is more "correct"? If someone asked you which system you should use, which methodology gives you a more reliable answer?
 
 .. _submission:
 
 Submission
 ----------
 
-Archive the following into a GZ or TGZ file:
+Archive the following into a .gz or .tgz file:
 
  - Your sieve .cpp file.
  - Your final gem5 confguration script from the tutorial.
- - Your statistics files (stats.txt) from your runs of your sieve.
+ - Your statistics files (stats.txt) from your runs of your sieve, appropriately named.
 
 Submit your archive as well as the PDF of your report to Canvas.
 
