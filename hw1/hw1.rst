@@ -10,7 +10,6 @@ Due: Monday, 9 October 2017 at 3:10 PM
 
 Submission of your code and your report will be done through Canvas_.
 See the submission_ section below for more information.
-Remember to bring a *paper* copy of your report to class.
 
 .. _Canvas: https://canvas.ucdavis.edu/courses/146759
 
@@ -73,6 +72,9 @@ gem5 will run on the `CSIF machines`_.
 Your regular CSIF home directory does not have enough space to store gem5.
 After you login, you will need to switch directories to ``/home2/<username>``.
 This directory has enough space for you to work in gem5.
+
+The contents of ``/home2`` will be deleted shortly after the quarter ends.
+Make sure to back up anything you want to keep.
 
 .. _CSIF machines: http://csifdocs.cs.ucdavis.edu/
 
@@ -232,11 +234,11 @@ Add answers to the following questions to your report.
 Submission
 ----------
 
-Archive the following into a GZ or TGZ file:
+Archive the following into a .gz or .tgz file:
 
  - Your sieve .cpp file.
  - Your final gem5 confguration script from the tutorial.
- - Your statistics files (stats.txt) from your runs of your sieve.
+ - Your statistics files (stats.txt) from your runs of your sieve, appropriately named.
 
 Submit your archive as well as the PDF of your report to Canvas.
 
