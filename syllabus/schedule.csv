@@ -4,8 +4,8 @@ Discussion,2-Oct,Background Quiz,
 ,,Paper Discussion 1,
 ,,Review: Cramming More Components onto Integrated Circuits,http://ieeexplore.ieee.org/document/4785860/
 ,,Optional: Design of Ion-Implanted MOSFET’s with Very Small Physical Dimensions,http://ieeexplore.ieee.org/document/1050511/
-Lecture,3-Oct,Trends in Technology and Computing,H&P: 1.4-1.7
-Lecture,5-Oct,Measuring Performance,H&P: 1.8-1.12
+Lecture,3-Oct,Tech Trends,H&P: 1.4-1.7
+Lecture,5-Oct,Performance,H&P: 1.8-1.12
 Discussion,9-Oct,"Homework 1 Due, Discussion",
 ,,Paper Discussion 2,
 ,,Review: Amdahl's Law in the Multicore Era,http://ieeexplore.ieee.org/document/4563876/
@@ -15,13 +15,12 @@ Lecture,10-Oct,Cache Refresher,"H&P: 2.1-2.2, B.1-B.3"
 Lecture,12-Oct,Cache Optimizations,"H&P: 2.1-2.2, B.1-B.3"
 Discussion,16-Oct,Quiz 1,
 ,,Paper Discussion 3,
-,,Review: Fundamental Latency Trade-offs in Architecting DRAM Caches, http://moin.ece.gatech.edu/papers/micro12.pdf
-Lecture,17-Oct,Main Memory and Memory Technology,H&P: 2.3
+,,Review: Fundamental Latency Trade-offs in Architecting DRAM Caches,http://moin.ece.gatech.edu/papers/micro12.pdf
+Lecture,17-Oct,DRAM and Virtual Memory,H&P: 2.3
 Lecture,19-Oct,Virtualization and Protection,"H&P: 2.4-2.8, B.4-B.5"
 Discussion,23-Oct,"Homework 2 Due, Discussion",
 ,,Paper Discussion 4,
-,,"Review: 
-Translation caching: skip, don't walk (the page table)",https://dl.acm.org/citation.cfm?id=1815970
+,,"Review: Translation Caching: Skip, Don't Walk (The Page Table)",https://dl.acm.org/citation.cfm?id=1815970
 ,,Homework 3 Release: ILP in gem5,
 Lecture,24-Oct,Pipelining Refresher,
 Lecture,26-Oct,Out-of-Order Execution,
