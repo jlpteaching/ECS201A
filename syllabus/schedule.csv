@@ -20,7 +20,8 @@ Lecture,17-Oct,Main Memory and Memory Technology,H&P: 2.3
 Lecture,19-Oct,Virtualization and Protection,"H&P: 2.4-2.8, B.4-B.5"
 Discussion,23-Oct,"Homework 2 Due, Discussion",
 ,,Paper Discussion 4,
-,,Review: TBA,TBA
+,,"Review: 
+Translation caching: skip, don't walk (the page table)",https://dl.acm.org/citation.cfm?id=1815970
 ,,Homework 3 Release: ILP in gem5,
 Lecture,24-Oct,Pipelining Refresher,
 Lecture,26-Oct,Out-of-Order Execution,
