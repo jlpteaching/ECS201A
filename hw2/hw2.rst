@@ -39,15 +39,28 @@ However, I have already made them, so you don't have to.
 Follow these steps to download my modifications.
 
 Note: If there are any mistakes in my code (which is not unlikely), I will update this repository.
-It's a good idea for you to use git so you can pull any updates easily.
+It's a good idea for you to use Git so you can pull any updates easily.
+If you used Mercurial to install gem5 originally, now is a good time to switch over to Git.
 
-In your gem5 repository, add my repository as a new remote for gem5, then check out the ``hw2`` branch:
+In your gem5 repository, update gem5, add my repository as a new remote for gem5, then check out the ``hw2`` branch:
 
 .. code-block:: sh
 
+    git pull origin master
     git remote add jlpteaching https://github.com/jlpteaching/gem5.git
     git fetch jlpteaching
     git checkout hw2
+
+After checking out the ``hw2`` branch, you'll also want to recompile gem5 to access the new files in ``src/learning_gem5/part2``.
+Recompile gem5 in the same way you compiled it in Homework 1:
+
+::
+
+    scons build/X86/gem5.opt -jX \
+    CPU_MODELS=AtomicSimpleCPU,TimingSimpleCPU,O3CPU,MinorCPU
+
+where ``X`` in ``-jX`` is the number of cores in your system, plus one.
+You will need to recompile gem5 every time you make modifications to gem5 files.
 
 Assignment
 ----------
@@ -94,12 +107,17 @@ Answer these questions in your report before continuing:
 #. What is the cache footprint for each of the four implementations?
 #. Assume you have a cache of 16 KB. For each of the four implementations, do you expect a low or high hit rate?
 
+The cache footprint is how much of the data is used by the working set of the application.
+If you need additional help understanding what it is, `this 1987 paper`_ from the University of Massachusetts, Amherst, has a description.
+
+.. _this 1987 paper: https://dl.acm.org/citation.cfm?id=32979
+
 Adding gem5 Statistics
 ~~~~~~~~~~~~~~~~~~~~~~
 
 First, you will modify the simple cache implementation in gem5 to count the number of compulsory (also known as cold) misses.
 For this, you will use the gem5 ``Stats`` package.
-You can use the ``hits`` and ``misses`` statistics that are already part of the SimpleCache as examples for gem5 statistics.
+You can use the ``hits`` and ``misses`` statistics that are already part of the SimpleCache as an example of how statistics in gem5 work.
 
 You will need to make a couple of changes in the ``simple_cache.cc`` and ``simple_cache.hh`` files.
 You will need to add statistics for the compulsory misses to the ``insert()`` function.
@@ -108,7 +126,7 @@ You may find using a `std::set`_ useful.
 Additionally, in order to count the cold misses for *just the region of interest*, you will need to fill in the function ``resetColdMisses()``.
 This function is called whenever the stats are reset (e.g., before the beginning of the ROI in matrix multiply).
 
-I have included the statistic in the code already (the variable ``coldMisses``).
+I have included the statistic in the code already: the variable ``coldMisses``.
 You only have to add a structure to track the cold misses and the logic to increment the ``coldMisses`` statistic.
 
 .. _std::set: http://en.cppreference.com/w/cpp/container/set
