@@ -32,41 +32,45 @@ If you have any feedback about errors, big or small, please let me know!
 .. _gem5: http://gem5.org/Main_Page
 .. _tutorial: http://learning.gem5.org/book/
 
-Instructions
-------------
+Assignment
+----------
 
 This assignment must be done alone.
 
-Step 1: gem5 Tutorial, Part I
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Step 1: Compile gem5
+~~~~~~~~~~~~~~~~~~~~
 
-Go through the Introduction and Part I of the `gem5 tutorial`__.
-You will go through the following topics:
-
- - Downloading and building gem5.
- - Creating a simple configuration script.
- - Running gem5 for the first time.
- - Adding a cache to your original configuration script.
- - Understanding the statistics and output of gem5.
- - Looking at the default configuration scripts.
-
-There are YouTube videos of me giving lectures on different parts of the tutorial.
-The video for `Part I`_ will be helpful to watch.
-You can find all of the videos on `my channel`_.
+Go through the Introducton and Building gem5 pages of the `gem5 tutorial`__.
+Make sure to get a successful gem5 install working before moving on.
 
 __ `tutorial`_
-.. _`my channel`: https://www.youtube.com/channel/UCBDXDuN_5XcmntoE-dnQPbQ
-.. _`Part I`: https://www.youtube.com/watch?v=5UT41VsGTsg
 
-Platforms
-"""""""""
+gem5 on Linux
+"""""""""""""
 
-gem5 runs on Linux and OS X.
+gem5 will work the best on Linux.
+The tutorial lists the dependency names on Ubuntu.
+If you are using a different distribution, you should be able to find the corresponding packages through your package manager, if the names aren't the same.
+
+gem5 on OS X
+""""""""""""
+
+gem5 will run on OS X.
+However, in years past, we have had a lot of difficulty with certain tools used in the compilation process.
+In particular, we have had trouble with Python versions, ``SCons``, the tool used to compile gem5, and ``LLVM``, which Xcode uses as its backend for ``gcc``.
+See the `Common Errors`_ section for more help.
+
+gem5 on Windows
+"""""""""""""""
+
 There is limited support for Windows running the `Windows Subsystem for Linux`_.
 If you use Windows, consider running a distribution of Linux in a VM or dual-booting.
-(This will be a good idea for the rest of your time here as a student at Davis, as well.)
+This will be a good idea for the rest of your time here as a student at Davis, as well.
 
 .. _`Windows Subsystem for Linux`: https://msdn.microsoft.com/commandline/wsl/about
+
+gem5 on the CSIF
+""""""""""""""""
 
 gem5 will run on the `CSIF machines`_.
 Your regular CSIF home directory does not have enough space to store gem5.
@@ -86,13 +90,13 @@ Compilation Instructions
 **Note: there is one modification to the tutorial that you will need to make.**
 When you are compiling, you will need to pass the following option to SCons:
 
-::
+.. code-block:: sh
 
     CPU_MODELS=AtomicSimpleCPU,TimingSimpleCPU,O3CPU,MinorCPU
 
 The entire compilation command should look like this:
 
-::
+.. code-block::sh
 
     scons build/X86/gem5.opt -jX \
     CPU_MODELS=AtomicSimpleCPU,TimingSimpleCPU,O3CPU,MinorCPU
@@ -102,7 +106,27 @@ where ``X`` in ``-jX`` is the number of cores in your system, plus one.
 As mentioned in the tutorial, it takes a while to compile gem5.
 You should download and start the compilation process before doing anything else.
 
-Step 2: Sieve of Eratosthenes
+Step 2: gem5 Tutorial, Part I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Go through the rest of Part I of the `gem5 tutorial`__.
+You will go through the following topics:
+
+ - Creating a simple configuration script.
+ - Running gem5 for the first time.
+ - Adding a cache to your original configuration script.
+ - Understanding the statistics and output of gem5.
+ - Looking at the default configuration scripts.
+
+There are YouTube videos of me giving lectures on different parts of the tutorial.
+The video for `Part I`_ will be helpful to watch.
+You can find all of the videos on `my channel`_.
+
+__ `tutorial`_
+.. _`my channel`: https://www.youtube.com/channel/UCBDXDuN_5XcmntoE-dnQPbQ
+.. _`Part I`: https://www.youtube.com/watch?v=5UT41VsGTsg
+
+Step 3: Sieve of Eratosthenes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Write a simple C++ program to implement the `Sieve of Eratosthenes`_.
@@ -116,7 +140,7 @@ For the number of prime numbers <= 100 000 000, the output should be 5761455.
 .. _Sieve of Eratosthenes: https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
 __ `Sieve of Eratosthenes`_
 
-Step 3: Use gem5
+Step 4: Use gem5
 ~~~~~~~~~~~~~~~~
 
 Now, you will run your application in gem5 with the configuration script you made in the tutorial.
@@ -187,7 +211,7 @@ MinorCPU        4               ``LPDDR2_S4_1066_1x32``
 MinorCPU        4               ``HBM_1000_4H_1x64``
 =============== =============== =======================
 
-Step 4: Report
+Step 5: Report
 ~~~~~~~~~~~~~~
 
 Finally, you will describe the changes in performance between your tests.
@@ -222,7 +246,7 @@ If you use ROI annotations, you'll need to tell gem5 to exit simulation when enc
 You can find this option in the System SimObject.
 See ``gem5/src/sim/System.py`` for more information.
 Then, you will need to modify your Python run script.
-A second, possibly easier, option is to use the ``dump_reset_stats`` magic instruction.
+A second, possibly easier, option is to use the ``dump_reset_stats`` magic instruction in your .cpp file.
 
 Add answers to the following questions to your report.
 
@@ -238,27 +262,52 @@ Archive the following into a .gz or .tgz file:
 
  - Your sieve .cpp file.
  - Your final gem5 confguration script from the tutorial.
- - Your statistics files (stats.txt) from your runs of your sieve, appropriately named.
+ - Your statistics files (``stats.txt``) from your runs of your sieve, appropriately named.
 
 Submit your archive as well as the PDF of your report to Canvas.
+**Do not include the PDF in the archive, submit it as a separate file.**
 
 Late assignments receive an automatic 25% reduction per day they are late.
 Assignments will not be accepted for late submission four days after the due date.
 
+For your convienence, all the questions to be answered in the report are repeated below.
+
+#. What metric should you use to compare the performance between different system configurations? Why?
+#. Which CPU model is more sensitive to changing the CPU frequency? Why?
+#. Which CPU model is more sensitive to changing the memory technology? Why?
+#. Is the sieve application more sensitive to the CPU model, the memory technology, or CPU frequency? Why?
+#. If you were to use a different application, do you think your conclusions would change? Why?
+
+**Extra Credit**
+
+6. Do you see a different result than before? If so, why?
+7. Which result is more "correct"? If someone asked you which system you should use, which methodology gives you a more reliable answer?
+
 Common Errors
 -------------
 
-Building gem5
-~~~~~~~~~~~~~
+Difficulty building gem5
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 See the `Building gem5`_ page of the tutorial if you are having trouble getting gem5 to build.
+
+For OS X, you will need to downgrade to SCons 2.5.1.
+SCons 3.0.0, which is default that Homebrew installs, does not work.
+
+Additionally, you will need to ensure that you are using the correct Python version.
+As mentioned in the page in the tutorial, use the following command to specify the correct Python version:
+
+.. code-block:: sh
+
+    python `which scons` build/X86/gem5.opt -jX \
+    CPU_MODELS=AtomicSimpleCPU,TimingSimpleCPU,O3CPU,MinorCPU
 
 .. _Building gem5: http://learning.gem5.org/book/part1/building.html
 
 NameError: name 'MinorCPU' is not defined
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-::
+.. code-block:: sh
 
     $ ./build/X86/gem5.opt ./configs/tutorial/simple.py
     gem5 Simulator System.  http://gem5.org
