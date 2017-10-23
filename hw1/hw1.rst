@@ -40,7 +40,7 @@ This assignment must be done alone.
 Step 1: Compile gem5
 ~~~~~~~~~~~~~~~~~~~~
 
-Go through the Introducton and Building gem5 pages of the `gem5 tutorial`__.
+Go through the Introduction and Building gem5 pages of the `gem5 tutorial`__.
 Make sure to get a successful gem5 install working before moving on.
 
 __ `tutorial`_
@@ -57,7 +57,7 @@ gem5 on OS X
 
 gem5 will run on OS X.
 However, in years past, we have had a lot of difficulty with certain tools used in the compilation process.
-In particular, we have had trouble with Python versions, ``SCons``, the tool used to compile gem5, and ``LLVM``, which Xcode uses as its backend for ``gcc``.
+In particular, we have had trouble with Python versions, ``SCons``, the tool used to compile gem5, and ``LLVM``, which Xcode uses as its back-end for ``gcc``.
 See the `Common Errors`_ section for more help.
 
 gem5 on Windows
@@ -237,10 +237,10 @@ gem5 has support for annotating your binary with special "region of interest" (R
 See the folders ``gem5/util/m5`` and ``gem5/include/gem5`` in the gem5 repository for more information.
 
 Annotate your binary with ROI instructions and re-run the comparison between ``MinorCPU`` at 1 and 2 GHz.
-To compile your annotated .cpp file, you need to make two changes to your GCC compilation command.
+To compile your annotated .cpp file, you need to make two changes to your ``gcc`` compilation command.
 
 #. Add the gem5 includes folder into your search path. You can accomplish this by adding ``-I<your gem5 path>/include`` to your compilation command.
-#. Add the x86 assembly file to the list of files for GCC to compile. You can accomplish this by adding ``<your gem5 path>/util/m5/m5op_x86.S`` to your compilation command.
+#. Add the x86 assembly file to the list of files for ``gcc`` to compile. You can accomplish this by adding ``<your gem5 path>/util/m5/m5op_x86.S`` to your compilation command.
 
 If you use ROI annotations, you'll need to tell gem5 to exit simulation when encountering ROI annotations.
 You can find this option in the System SimObject.
@@ -261,7 +261,7 @@ Submission
 Archive the following into a .gz or .tgz file:
 
  - Your sieve .cpp file.
- - Your final gem5 confguration script from the tutorial.
+ - Your final gem5 configuration script from the tutorial.
  - Your statistics files (``stats.txt``) from your runs of your sieve, appropriately named.
 
 Submit your archive as well as the PDF of your report to Canvas.
@@ -270,7 +270,7 @@ Submit your archive as well as the PDF of your report to Canvas.
 Late assignments receive an automatic 25% reduction per day they are late.
 Assignments will not be accepted for late submission four days after the due date.
 
-For your convienence, all the questions to be answered in the report are repeated below.
+For your convenience, all the questions to be answered in the report are repeated below.
 
 #. What metric should you use to compare the performance between different system configurations? Why?
 #. Which CPU model is more sensitive to changing the CPU frequency? Why?
@@ -291,10 +291,10 @@ Difficulty building gem5
 
 See the `Building gem5`_ page of the tutorial if you are having trouble getting gem5 to build.
 
-For OS X, you will need to downgrade to SCons 2.5.1.
+For OS X, if you are having issues with SCons, you will need to downgrade to SCons 2.5.1.
 SCons 3.0.0, which is default that Homebrew installs, does not work.
 
-Additionally, you will need to ensure that you are using the correct Python version.
+Additionally, on OS X, you will need to ensure that you are using the correct Python version.
 As mentioned in the page in the tutorial, use the following command to specify the correct Python version:
 
 .. code-block:: sh
