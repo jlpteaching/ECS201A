@@ -203,6 +203,9 @@ Archive the following into a .gz or .tgz file:
 Submit your archive, as well as the PDF of your report, on Canvas_.
 **Do not include the PDF in the archive, submit it as a separate file.**
 
+Late assignments receive an automatic 25% reduction per day they are late.
+Assignments will not be accepted for late submission four days after the due date.
+
 For your convenience, all the questions to be answered in the report are repeated below.
 
 #. What is the memory footprint of this application?
@@ -225,11 +228,22 @@ For your convenience, all the questions to be answered in the report are repeate
 Common Errors
 -------------
 
-NameError: name 'SimpleCache' is not defined
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+error: unknown directive
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-gem5 cannot find the definitions for ``SimpleCache`` and its associated functions.
-The issue is that you didn't recompile gem5 as described above_.
+.. code-block:: sh
+
+    util/m5/m5op_x86.S:72:94: error: unknown directive
+    .globl m5_init_param; .func m5_init_param; m5_init_param: ...
+
+When attempting to compile the matrix multiply implementations, you may get this error.
+The LLVM assembler has an issue with some of the directives in the assembly files in gem5.
+Switch over to using ``gcc``, if you are able.
+
+If you are using OS X, one method of moving to ``gcc`` is through MacPorts_.
+If you don't want to go through the trouble, you can compile the matrix multiply on the CSIF, and copy the binaries back to your computer.
+
+.. _MacPorts: https://www.macports.org/
 
 Multiple statistics dump files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -238,3 +252,9 @@ The benchmark region of interest (ROI) has been surrounded with dump and reset s
 Thus, there are three different statistic dumps.
 *Use the second dump for all of your answers!*
 This is the stat dump for the ROI!
+
+NameError: name 'SimpleCache' is not defined
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+gem5 cannot find the definitions for ``SimpleCache`` and its associated functions.
+You didn't recompile gem5 as described above_.
