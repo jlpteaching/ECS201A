@@ -17,20 +17,21 @@ Overview
 --------
 
 The purpose of this assignment is dual-fold.
-First, it will expose you to gem5, which we will use more heavily later in the quarter.
+First, it will expose you to gem5_, which we will use more heavily later in the quarter.
 Second, it will give you experience measuring performance on different systems, and comparing and contrasting those systems.
 
-For this assignment, you will go through the first few parts of the gem5_ tutorial by yourself.
+For this assignment, you will go through the first few parts of the `gem5 book`_ by yourself.
 gem5 is a system simulator.
 It is a modular platform for computer-system architecture research, encompassing system-level architecture as well as processor micro-architecture.
 
-I wrote the tutorial_ that you will be going through.
+I wrote the book__ that you will be going through.
 If you have any feedback about errors, big or small, please let me know!
-`Email me`_ with the subject "gem5-tutorial comments" if you find any errors or have any comments.
+`Email me`_ with the subject "gem5-book comments" if you find any errors or have any comments.
 
-.. _email me: mailto:jlowepower@ucdavis.edu
 .. _gem5: http://gem5.org/Main_Page
-.. _tutorial: http://learning.gem5.org/book/
+.. _gem5 book: http://learning.gem5.org/book/
+__ `gem5 book`_
+.. _email me: mailto:jlowepower@ucdavis.edu
 
 Assignment
 ----------
@@ -40,16 +41,17 @@ This assignment must be done alone.
 Step 1: Compile gem5
 ~~~~~~~~~~~~~~~~~~~~
 
-Go through the Introduction and Building gem5 pages of the `gem5 tutorial`__.
-Make sure to get a successful gem5 install working before moving on.
+Go through the Introduction_ and `Building gem5`_ pages of the `gem5 book`_.
+Make sure to get your gem5 install working before moving on.
 
-__ `tutorial`_
+.. _Introduction: http://learning.gem5.org/book/intro.html
+.. _Building gem5: http://learning.gem5.org/book/part1/building.html
 
 gem5 on Linux
 """""""""""""
 
 gem5 will work the best on Linux.
-The tutorial lists the dependency names on Ubuntu.
+The `Building gem5`_ page lists the dependency names on Ubuntu.
 If you are using a different distribution, you should be able to find the corresponding packages through your package manager, if the names aren't the same.
 
 gem5 on OS X
@@ -58,7 +60,7 @@ gem5 on OS X
 gem5 will run on OS X.
 However, in years past, we have had a lot of difficulty with certain tools used in the compilation process.
 In particular, we have had trouble with Python versions, ``SCons``, the tool used to compile gem5, and ``LLVM``, which Xcode uses as its back-end for ``gcc``.
-See the `Common Errors`_ section for more help.
+See the `Common Errors`_ section for more information.
 
 gem5 on Windows
 """""""""""""""
@@ -87,7 +89,7 @@ Make sure to back up anything you want to keep.
 Compilation Instructions
 """"""""""""""""""""""""
 
-**Note: there is one modification to the tutorial that you will need to make.**
+**Note: there is one modification to the compilation command in the book that you will need to make.**
 When you are compiling, you will need to pass the following option to SCons:
 
 .. code-block:: sh
@@ -103,13 +105,13 @@ The entire compilation command should look like this:
 
 where ``X`` in ``-jX`` is the number of cores in your system, plus one.
 
-As mentioned in the tutorial, it takes a while to compile gem5.
+As mentioned in the book, it takes a while to compile gem5.
 You should download and start the compilation process before doing anything else.
 
-Step 2: gem5 Tutorial, Part I
+Step 2: gem5 Book, Part I
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Go through the rest of Part I of the `gem5 tutorial`__.
+Go through the rest of Part I of the `gem5 book`_.
 You will go through the following topics:
 
  - Creating a simple configuration script.
@@ -118,11 +120,10 @@ You will go through the following topics:
  - Understanding the statistics and output of gem5.
  - Looking at the default configuration scripts.
 
-There are YouTube videos of me giving lectures on different parts of the tutorial.
+There are YouTube videos of me giving lectures on different parts of the book.
 The video for `Part I`_ will be helpful to watch.
 You can find all of the videos on `my channel`_.
 
-__ `tutorial`_
 .. _`my channel`: https://www.youtube.com/channel/UCBDXDuN_5XcmntoE-dnQPbQ
 .. _`Part I`: https://www.youtube.com/watch?v=5UT41VsGTsg
 
@@ -143,7 +144,7 @@ __ `Sieve of Eratosthenes`_
 Step 4: Use gem5
 ~~~~~~~~~~~~~~~~
 
-Now, you will run your application in gem5 with the configuration script you made in the tutorial.
+Now, you will run your application in gem5 with the configuration script you made in the book.
 You will change the CPU model, frequency, and memory configuration while testing your sieve program.
 
 1. Run gem5 with Your Sieve
@@ -152,7 +153,7 @@ You will change the CPU model, frequency, and memory configuration while testing
 Run your sieve program in gem5 instead of the 'hello' example.
 You will need to change the location in your configuration script to where your static binary is located.
 *Do not use se.py or any other configuration script.
-Use the one you made in the tutorial.*
+Use the one you made in the book.*
 Save the statistics file generated from this run, and for every run after this one.
 
 **Choose an appropriate input size.**
@@ -231,7 +232,7 @@ Extra Credit (not required)
 
 Complete the following for extra credit.
 This involves some digging into gem5 on your own.
-There is (currently) no simple tutorial to walk through to accomplish this, thus it's extra credit.
+There isn't (currently) a simple tutorial in the book to walk through how to accomplish this, thus it's extra credit.
 
 gem5 has support for annotating your binary with special "region of interest" (ROI) magic instructions.
 See the folders ``gem5/util/m5`` and ``gem5/include/gem5`` in the gem5 repository for more information.
@@ -261,7 +262,7 @@ Submission
 Archive the following into a .gz or .tgz file:
 
  - Your sieve .cpp file.
- - Your final gem5 configuration script from the tutorial.
+ - Your final gem5 configuration script from the book.
  - Your statistics files (``stats.txt``) from your runs of your sieve, appropriately named.
 
 Submit your archive as well as the PDF of your report to Canvas.
@@ -289,20 +290,18 @@ Common Errors
 Difficulty building gem5
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-See the `Building gem5`_ page of the tutorial if you are having trouble getting gem5 to build.
+See the `Building gem5`_ page of the book if you are having trouble getting gem5 to build.
 
 For OS X, if you are having issues with SCons, you will need to downgrade to SCons 2.5.1.
 SCons 3.0.0, which is default that Homebrew installs, does not work.
 
 Additionally, on OS X, you will need to ensure that you are using the correct Python version.
-As mentioned in the page in the tutorial, use the following command to specify the correct Python version:
+As mentioned in the book, use the following command to specify the correct Python version:
 
 .. code-block:: sh
 
     python `which scons` build/X86/gem5.opt -jX \
     CPU_MODELS=AtomicSimpleCPU,TimingSimpleCPU,O3CPU,MinorCPU
-
-.. _Building gem5: http://learning.gem5.org/book/part1/building.html
 
 NameError: name 'MinorCPU' is not defined
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
