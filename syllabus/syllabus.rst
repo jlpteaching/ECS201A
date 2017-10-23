@@ -56,7 +56,7 @@ You will use Canvas for turning in your homeworks and paper reviews.
 Gradescope
 ~~~~~~~~~~
 
-We will use Gradescope_ for quizzes, the midterm, and the final.
+We will use Gradescope_ for returning quizzes, the midterm, and the final.
 Gradescope gives you a graded PDF version of your test, along with a rubric, immediately after we're done grading.
 You will receive an email from Gradescope to make your account after we grade the first quiz.
 
@@ -71,7 +71,16 @@ It's best to ask your questions on Piazza.
 That way, all of your classmates can see the answer instead of emailing Justin or me.
 Additionally, you might get a much faster response from one of your classmates!
 
-Exam Conflicts
+Through asking and answering questions on Piazza, you improve your understanding of the material, and improve other students' understanding as well.
+As an incentive to answer other students' questions and participate, I will drop your lowest quiz score if you consistently participate on Piazza.
+I will check Piazza participation and drop the lowest score at the end of the quarter, when all the grades have come in.
+
+Regrade Requests
+~~~~~~~~~~~~~~~~
+
+Regrade requests must be made within one week of the return of the assignment or test.
+
+Accommodations
 ~~~~~~~~~~~~~~
 
 The exam schedule is available on Canvas_, or below_.
@@ -80,8 +89,8 @@ Per `official UC Davis policy`_, if you have an accommodation request from the `
 .. _official UC Davis policy: http://catalog.ucdavis.edu/academicinfo/exams.html
 .. _Student Disability Center: https://sdc.ucdavis.edu/
 
-Other Information
-~~~~~~~~~~~~~~~~~
+Lecture Videos
+~~~~~~~~~~~~~~
 
 The lectures and discussion will be recorded.
 The videos for each class will be available on Canvas_ soon after the lecture.
@@ -222,7 +231,6 @@ Midterm       20%
 
 Final         30%
 ============= ===
-
 
 Academic Misconduct
 --------------------
