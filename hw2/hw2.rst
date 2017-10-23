@@ -25,7 +25,7 @@ I suggest you read through it, at a minimum.
 
 I wrote the book that you will be going through.
 If you have any feedback about errors, big or small, please let me know!
-`Email me`_ with the subject "gem5-tutorial comments" if you find any errors or have any comments.
+`Email me`_ with the subject "gem5-book comments" if you find any errors or have any comments.
 
 .. _Part II: http://learning.gem5.org/book/part2
 .. _Learning gem5: http://learning.gem5.org
@@ -257,4 +257,5 @@ NameError: name 'SimpleCache' is not defined
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 gem5 cannot find the definitions for ``SimpleCache`` and its associated functions.
-You didn't recompile gem5 as described above_.
+The issue is that you didn't recompile gem5 as described above_.
+You will need to recompile gem5 at the beginning, and after every time you make changes to gem5 source files.
