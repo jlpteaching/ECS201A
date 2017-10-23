@@ -5,6 +5,8 @@
 ECS 201A - Homework 2
 =====================
 
+For next time: Make them implement a small victim cache on the direct-mapped version to show how much victim caches help.
+
 Due: Monday, 23 October 2017 at 3:10 PM
 ---------------------------------------
 
