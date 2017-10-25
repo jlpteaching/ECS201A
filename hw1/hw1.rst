@@ -8,6 +8,8 @@ ECS 201A - Homework 1
 Due: Monday, 9 October 2017 at 3:10 PM
 --------------------------------------
 
+**FOR NEXT TIME** Add details about how I'm going to grade assignments.
+
 Submission of your code and your report will be done through Canvas_.
 See the submission_ section below for more information.
 
