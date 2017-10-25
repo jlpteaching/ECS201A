@@ -2,6 +2,7 @@
 :Editor: Justin Perona
 
 .. _Canvas: https://canvas.ucdavis.edu/courses/146759
+.. _Github: https://github.com/jlpteaching/17fq-cs201a
 .. _Gradescope: https://gradescope.com/courses/11391
 .. _Piazza: https://piazza.com/class/j7z54vw7a5r2sl
 .. _Media Gallery: https://canvas.ucdavis.edu/courses/146759/external_tools/970
@@ -53,6 +54,12 @@ We will be using Canvas_ for much of the course administration.
 This document, as well as all other downloads, are available on the Canvas site.
 You will use Canvas for turning in your homeworks and paper reviews.
 
+Github
+~~~~~~
+
+We will use Github_ to host the latest copies of this document, the course schedule, and the homeworks.
+If I make changes to those documents, they will appear first on Github.
+
 Gradescope
 ~~~~~~~~~~
 
@@ -73,7 +80,12 @@ Additionally, you might get a much faster response from one of your classmates!
 
 Through asking and answering questions on Piazza, you improve your understanding of the material, and improve other students' understanding as well.
 As an incentive to answer other students' questions and participate, I will drop your lowest quiz score if you consistently participate on Piazza.
-I will check Piazza participation and drop the lowest score at the end of the quarter, when all the grades have come in.
+I will check Piazza participation and drop the lowest score at the end of the quarter.
+
+In the spirit of the above, please ask questions as public questions on Piazza, if possible.
+This way, your question, and the answer to your question, can help somebody else who might have the same question.
+We will change questions asked privately to public, if we deem it appropriate.
+If your question involves code you've written, or is about a personal issue, we will leave those private.
 
 Regrade Requests
 ~~~~~~~~~~~~~~~~
@@ -209,6 +221,9 @@ The midterm will be given in class on 31 October 2017.
 
 The final is scheduled for Tuesday, 12 December 2017, from 1:00 - 3:00 PM.
 The location is the same as the lecture room.
+
+Both the midterm and the final are closed book, closed paper, and closed notes.
+No electronic devices (including calculators) are allowed.
 
 Grading
 -------
