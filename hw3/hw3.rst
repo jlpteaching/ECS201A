@@ -105,7 +105,9 @@ https://www.youtube.com/watch?v=hsQj7n-8Q3A
 
 Once you have applied loop unrolling to the functions, run the application and measure the CPI, time, and instructions for each function.
 
-Question 1: Does unrolling the loops provide an improvement? (Answer for each function.)
+Question 0: Prove to yourself your unrolled loops are still getting the right answer. How did you do this?
+
+Question 1: Does unrolling the loops provide an improvement? (Answer for each function.) What kind of hazard does unrolling the loops decrease?
 
 
 Increase the core resources
@@ -113,11 +115,24 @@ Increase the core resources
 
 Now, modify ``HPI.py`` to have more SIMD/floating point units so you can do more floating point operations in parallel and decrease the CPI.
 
+Re-run the application.
 
+Question 2: What effects does increasing the hardware have on both the unrolled and not unrolled functions? What hazard does adding more hardware decrease?
 
-
-
-
+Optimize the loops
+~~~~~~~~~~~~~~~~~~
 
 How to get lower CPI with loop unrolling.
 https://www.youtube.com/watch?v=2nx0ZCg5D9g
+
+Now, further modify your unrolled loops to try to further decrease the CPI.
+
+Question 3: Which versions are better (pick the right metric or multiple metrics). How did you further optimize? Did it work the way you expected?
+
+
+Use the compiler to optimize
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Modify the Makefile to use the ``-O3`` option for GCC instead of ``-O1``.
+
+Question 4: What performs better, your optimized loops or the GCC optimized? What about the instructions are different and why do you see the performance difference?
