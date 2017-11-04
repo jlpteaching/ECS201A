@@ -208,6 +208,7 @@ These quizzes are meant for both you and me, to gauge your current understanding
 There will be a mix of questions from the book, and new questions.
 
 The quizzes will be open book, open paper, and open notes.
+Calculators are allowed, though unnecessary.
 However, I can't allow electronic versions of books, papers, or notes.
 It would be too easy for you to just Ctrl-F the answer!
 
