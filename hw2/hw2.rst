@@ -139,12 +139,18 @@ You will need to make a couple of changes in the ``simple_cache.cc`` and ``simpl
 You will need to add statistics for the compulsory misses to the ``insert()`` function.
 You may find using a `std::set`_ useful.
 
+You will need to understand the gem5 Packet object.
+Packets contain the memory command, address, data, etc.
+The Learning gem5 book `describes the Packets in more detail`_, and you can also check out the code in ``src/mem/packet.hh``.
+
 Additionally, in order to count the cold misses for *just the region of interest*, you will need to fill in the function ``resetColdMisses()``.
 This function is called whenever the stats are reset (e.g., before the beginning of the ROI in the matrix multiply).
 I have included the statistic in the code already: the variable ``coldMisses``.
 You only have to add a structure to track the cold misses and the logic to increment the ``coldMisses`` statistic.
 
 .. _std::set: http://en.cppreference.com/w/cpp/container/set
+
+.. _describes the Packets in more detail: http://learning.gem5.org/book/part2/memoryobject.html#packets
 
 Fully Associative Cache Experiments
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
