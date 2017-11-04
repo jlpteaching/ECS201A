@@ -13,7 +13,7 @@ See the `submission section`_ below for more information.
 
 .. _Canvas: https://canvas.ucdavis.edu/courses/146759
 
-**Please submit your report as a separate PDF, and not in the archive!**
+*Please submit your report as a separate PDF, and not in the archive!*
 Not only does this make things easier for me to grade, but I can give you feedback directly onto your report.
 
 Overview
@@ -30,7 +30,7 @@ Instead of just running ``gcc`` or whatever compiler you like, you must cross-co
 Cross-compiling means compiling for a different ISA than your host machine, since, odds are, nobody in class is using an ARM processor on their main computer.
 
 I have already downloaded and set up a cross compiler for everyone to use on the CSIF machines.
-It is located at
+You can access it at:
 
 .. code-block:: sh
 
@@ -216,7 +216,10 @@ Archive the following into a .gz or .tgz file:
 - The modified ``daxpy.cc`` file, that has your unrolled loops.
 
 Submit your archive, as well as the PDF of your report, on Canvas_.
-**Do not include the PDF in the archive, submit it as a separate file.**
+*Do not include the PDF in the archive, submit it as a separate file.*
+
+Late assignments receive an automatic 25% reduction per day they are late.
+Assignments will not be accepted for late submission four days after the due date.
 
 For your convenience, all the questions to be answered in the report are repeated below.
 
