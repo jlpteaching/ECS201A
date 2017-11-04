@@ -82,7 +82,7 @@ Compile it with the following:
 
     scons build/ARM/gem5.opt -jX
 
-where ``X`` is the number of cores in your machine, plus one.
+where ``X`` in ``-jX`` is the number of cores in your machine, plus one.
 
 .. _documentation on cross compiling from ARM: https://developer.arm.com/research/research-enablement/system-modeling
 
