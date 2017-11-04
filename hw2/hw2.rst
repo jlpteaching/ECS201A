@@ -9,7 +9,9 @@ Due: Monday, 23 October 2017 at 3:10 PM
 ---------------------------------------
 
 Submission of your code and your report will be done through Canvas_.
-See the submission_ section below for more information.
+See the `submission section`_ below for more information.
+
+*Please submit your report as a separate PDF, and not in the archive!* Not only does this make things easier for me to grade, but I can give you feedback directly onto your report.
 
 .. _Canvas: https://canvas.ucdavis.edu/courses/146759
 
@@ -59,7 +61,7 @@ In your gem5 repository, update gem5, add my repository as a new remote for gem5
 gem5 Source Additions
 ~~~~~~~~~~~~~~~~~~~~~
 
-Once you check out the hw2 branch, there will be some new files.
+Once you check out the ``hw2`` branch, there will be some new files.
 
 First, in ``src/learning_gem5/part2``, there will be the SimpleCache files: ``SimpleCache.py``, ``simple_cache.hh``, and ``simple_cache.cc``.
 These implement a *very* simple cache model.
@@ -140,8 +142,9 @@ You will need to add statistics for the compulsory misses to the ``insert()`` fu
 You may find using a `std::set`_ useful.
 
 You will need to understand the gem5 Packet object.
-Packets contain the memory command, address, data, etc.
-The Learning gem5 book `describes the Packets in more detail`_, and you can also check out the code in ``src/mem/packet.hh``.
+Packets contain the memory command, address, data, and so forth.
+The Learning gem5 book `describes Packets in more detail`_.
+You can also check out the code in ``src/mem/packet.hh``.
 
 Additionally, in order to count the cold misses for *just the region of interest*, you will need to fill in the function ``resetColdMisses()``.
 This function is called whenever the stats are reset (e.g., before the beginning of the ROI in the matrix multiply).
@@ -150,7 +153,7 @@ You only have to add a structure to track the cold misses and the logic to incre
 
 .. _std::set: http://en.cppreference.com/w/cpp/container/set
 
-.. _describes the Packets in more detail: http://learning.gem5.org/book/part2/memoryobject.html#packets
+.. _describes Packets in more detail: http://learning.gem5.org/book/part2/memoryobject.html#packets
 
 Fully Associative Cache Experiments
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -196,7 +199,7 @@ Add an answer to the following question to your report.
 
 13. Why (or why not) does adding a dirty bit have a significant performance impact for this cache implementation, running matrix multiply?
 
-.. _submission:
+.. _submission section:
 
 Submission
 ----------
@@ -207,7 +210,7 @@ Archive the following into a .gz or .tgz file:
 - The eight statistics files from your runs of ``run_mm.py``, appropriately named. You should have a file for each of the cache types run with each of the matrix multiply executables.
 
 Submit your archive, as well as the PDF of your report, on Canvas_.
-**Do not include the PDF in the archive, submit it as a separate file.**
+*Do not include the PDF in the archive, submit it as a separate file.*
 
 Late assignments receive an automatic 25% reduction per day they are late.
 Assignments will not be accepted for late submission four days after the due date.
