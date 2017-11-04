@@ -69,7 +69,7 @@ Thus, you will have eight different stat dumps when running the program.
 Compiling
 ~~~~~~~~~
 
-Once you checkout the ``hw3`` branch, you can compile the ``daxpy`` program for ARM by using ``make``.
+Once you checkout the ``hw3`` branch, you can compile the ``daxpy`` program for ARM on the CSIF by using ``make``.
 If you insist on using your own device, you can follow the `documentation on cross compiling from ARM`_.
 
 You will have to recompile gem5 to use the ARM ISA.
@@ -95,6 +95,8 @@ Thus, to run our application you can use the following:
 .. code-block:: sh
 
     build/ARM/gem5.opt configs/example/arm/starter_se.py daxpy --cpu=hpi
+
+You may want to turn the above into a shell script.
 
 This will run the application using the "HPI" (high-performance in-order) core.
 You can find the configuration for the HPI core in ``configs/common/cores/arm/HPI.py``.
@@ -128,6 +130,8 @@ Answer the following question in your report.
 .. _Wikipedia: https://en.wikipedia.org/wiki/Loop_unrolling
 .. _good YouTube videos: https://www.youtube.com/watch?v=hsQj7n-8Q3A
 
+.. _earlier:
+
 Increase the Core Resources
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -156,10 +160,11 @@ I have installed the cross compiler version on the CSIF at the following locatio
 
     /home2/jlp/gcc-linaro-5.4.1-2017.05-x86_64_aarch64-linux-gnu/bin
 
-
 You will probably want to use ``objdump -dC daxpy``.
 The ``-d`` option disassembles to convert from machine code to assembly, and the ``-C`` option "demangles" the names of functions so they are more readable.
 You can find more information about ``objdump`` either by looking at the ``man`` page (``man objdump``) or Googling.
+
+Again, once you get the ``objdump`` command working, you may want to turn it into a shell script.
 
 `Another video from the Georgia Tech class`_ provides a good overview of how to get lower CPI by rearranging instructions.
 
@@ -196,7 +201,7 @@ Extra Credit
 ~~~~~~~~~~~~
 
 The MinorCPU, which is the model that the HPI core is based on, is a very flexible CPU model.
-All of the parameters for the HPI CPU can be found in the ``HPI.py`` file.
+All of the parameters for the HPI CPU can be found in the ``HPI.py`` file that we modified earlier_.
 
 Can you modify these parameters (specifically in the ``HPI`` class) to achieve even higher performance and lower CPI for the loops?
 You can choose to concentrate on only one version of the loops out of the four versions above.
