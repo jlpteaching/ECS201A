@@ -220,9 +220,12 @@ Step 5: Report
 
 Finally, you will describe the changes in performance between your tests.
 
-Include a PDF named ``report.pdf`` in your submission.
+Include a PDF in the main level of your submission.
+*Do not archive the PDF with the rest of your files.
+Keep it separate.*
 This file will contain your observations and conclusions from the experiment.
-It should contain answers to the following questions:
+
+Answer the following questions in your report.
 
 #. What metric should you use to compare the performance between different system configurations? Why?
 #. Which CPU model is more sensitive to changing the CPU frequency? Why?
