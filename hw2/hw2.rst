@@ -11,7 +11,8 @@ Due: Monday, 23 October 2017 at 3:10 PM
 Submission of your code and your report will be done through Canvas_.
 See the `submission section`_ below for more information.
 
-*Please submit your report as a separate PDF, and not in the archive!* Not only does this make things easier for me to grade, but I can give you feedback directly onto your report.
+*Please submit your report as a separate PDF, and not in the archive!*
+Not only does this make things easier for me to grade, but I can give you feedback directly onto your report.
 
 .. _Canvas: https://canvas.ucdavis.edu/courses/146759
 
