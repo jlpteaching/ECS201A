@@ -11,6 +11,9 @@ Due: Monday, 9 October 2017 at 3:10 PM
 Submission of your code and your report will be done through Canvas_.
 See the submission_ section below for more information.
 
+*Please submit your report as a separate PDF, and not in the archive!*
+Not only does this make things easier for me to grade, but I can give you feedback directly onto your report.
+
 .. _Canvas: https://canvas.ucdavis.edu/courses/146759
 
 Overview
@@ -109,7 +112,7 @@ As mentioned in the book, it takes a while to compile gem5.
 You should download and start the compilation process before doing anything else.
 
 Step 2: gem5 Book, Part I
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Go through the rest of Part I of the `gem5 book`_.
 You will go through the following topics:
@@ -265,8 +268,8 @@ Archive the following into a .gz or .tgz file:
  - Your final gem5 configuration script from the book.
  - Your statistics files (``stats.txt``) from your runs of your sieve, appropriately named.
 
-Submit your archive as well as the PDF of your report to Canvas.
-**Do not include the PDF in the archive, submit it as a separate file.**
+Submit your archive, as well as the PDF of your report, to Canvas.
+*Do not include the PDF in the archive, submit it as a separate file.*
 
 Late assignments receive an automatic 25% reduction per day they are late.
 Assignments will not be accepted for late submission four days after the due date.
