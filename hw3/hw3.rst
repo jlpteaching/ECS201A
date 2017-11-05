@@ -57,7 +57,7 @@ The Test Application
 ~~~~~~~~~~~~~~~~~~~~
 
 In the new code, you'll find a test application: ``daxpy.cc``.
-This file actually has three different test kernels: ``daxpy`` (double a\*x+b), ``daxsbxpxy`` (double a\*x^2+b\*x+x\*y), and a simple stencil.
+This file actually has three different test kernels: ``daxpy`` (double a\*x+y), ``daxsbxpxy`` (double a\*x^2+b\*x+x\*y), and a simple stencil.
 I made ``daxsbxpxy`` up.
 
 There are two implementations of each function: a naive version that is a simple for loop, and an "unrolled" version.
