@@ -167,6 +167,9 @@ You can find more information about ``objdump`` either by looking at the ``man``
 Again, once you get the ``objdump`` command working, you may want to turn it into a shell script.
 
 `Another video from the Georgia Tech class`_ provides a good overview of how to get lower CPI by rearranging instructions.
+You can also use techniques like software pipelining (from the Rau paper) and explained more clearly on wikipedia_.
+
+.. _wikipedia: https://en.wikipedia.org/wiki/Software_pipelining
 
 Answer the following question in your report.
 
