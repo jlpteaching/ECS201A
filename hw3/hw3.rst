@@ -70,7 +70,9 @@ Compiling
 ~~~~~~~~~
 
 Once you checkout the ``hw3`` branch, you can compile the ``daxpy`` program for ARM on the CSIF by using ``make``.
-If you insist on using your own device, you can follow the `documentation on cross compiling from ARM`_.
+If you insist on using your own device, you can follow the `documentation on cross compiling from ARM`_. 
+**Important**: If you set up the cross compiler on your own system, you must modify the Makefile to work on your system.
+**Make sure you are using -O1 optimization for all compilation unless it is stated otherwise!!!**
 
 You will have to recompile gem5 to use the ARM ISA.
 To compile gem5 with the ARM ISA instead of x86, use the same command, but substitute ARM for x86 as below.
