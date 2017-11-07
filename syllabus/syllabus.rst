@@ -91,7 +91,8 @@ You will need to have third-party cookies enabled to access the videos.
 Prerequisites
 -------------
 
-Undergraduate computer architecture course (e.g., ECS 154B).
+Undergraduate computer architecture course (e.g., ECS 154B)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 I am going to assume you have knowledge of ISAs, simple pipelining, simple caching, and high-level computer organization.
 These basics are covered in D. A. Patterson and J. L. Hennessy, `Computer Organization and Design: The Hardware/Software Interface`_.
@@ -100,7 +101,24 @@ Some of these topics are covered in the appendices of our Hennessy and Patterson
 For instance, Appendix A gives a great overview of ISA design and implications.
 If you find you do not have enough background on a topic, start by checking the appendices of the book.
 
+If you do not have this background, succeeding in this class will be hard.
+It is possible to catch up by reading along with the Patterson and Hennessy book and the appendecies.
+However, you should expect to put in the amount of time for two classes to catch up.
+
 .. _`Computer Organization and Design: The Hardware/Software Interface`: http://dl.acm.org/citation.cfm?id=2568134
+
+Programming experience
+~~~~~~~~~~~~~~~~~~~~~~
+
+We will be using simulation for many of the assignments in this course. 
+Simulators are large software projects.
+This course will be extra work if you do not have a strong coding background.
+
+Specifically, we will be using gem5_ which is written in C++ and Python.
+You should have experience programming in C or C++ and Python to succeed in this course.
+If you do not have this experience, expect to spend significant time on the assignments since you will be learning both computer architecture and a programming language.
+
+.. _gem5: http://gem5.googlesource.com/
 
 Class Format
 ------------
