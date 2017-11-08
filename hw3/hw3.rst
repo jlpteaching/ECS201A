@@ -118,12 +118,19 @@ You may want to read more about loop unrolling on Wikipedia_, or watch these `go
 This was the first result when I Googled "loop unrolling."
 
 Prove to yourself your unrolled loops are still getting the right answer.
+In other words, make sure that you did not break the program when unrolling the loops.
 
 Answer the following question in your report.
 
-#. How did you prove that your unrolled loops were correct code?
+#. How did you prove that your unrolled loops are generating the correct results?
 
 Once you have applied loop unrolling to the functions, run the application and measure the following for each function: CPI, time, and instructions.
+**Note: Do not use the sim_insts statistic at the top of the statistics file**.
+Instead use the committedInsts statistic from the CPU.
+
+Also, be careful to look at the correct statistics dump.
+The stats.txt file will have a number of different dumps so make sure you are looking at the dump for the function you care about.
+There are also dumps for the initialization and cleanup at the end that should be ignored.
 
 Answer the following question in your report.
 
