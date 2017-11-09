@@ -35,7 +35,7 @@ Lecture 12,7-Nov,Pipelining 2,"H&P: 3.3, C.2"
 Lecture 13,9-Nov,Advanced Pipelining 1,H&P: C.3-C.5
 Discussion 7,13-Nov,"Homework 3 Due, Discussion",
 ,,Paper Discussion 6,
-,,Review: TBA,TBA
+,,Review: Dynamic Branch Prediction with Perceptrons,https://www.cs.utexas.edu/~lin/papers/hpca01.pdf
 Lecture 14,14-Nov,Advanced Pipelining 2,H&P: 3.4-3.5
 Lecture 15,16-Nov,Advanced Pipelining 3,H&P: 3.5-3.7
 Discussion 8,20-Nov,Quiz 2,
