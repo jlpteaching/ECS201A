@@ -9,7 +9,7 @@ Due: Monday, 13 November 2017 at 3:10 PM
 ----------------------------------------
 
 Submission of your code and your report will be done through Canvas_.
-See the `submission section`_ below for more information.
+See the Submission_ section below for more information.
 
 .. _Canvas: https://canvas.ucdavis.edu/courses/146759
 
