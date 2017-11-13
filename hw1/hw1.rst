@@ -9,7 +9,7 @@ Due: Monday, 9 October 2017 at 3:10 PM
 --------------------------------------
 
 Submission of your code and your report will be done through Canvas_.
-See the submission_ section below for more information.
+See the Submission_ section below for more information.
 
 *Please submit your report as a separate PDF, and not in the archive!*
 Not only does this make things easier for me to grade, but I can give you feedback directly onto your report.
@@ -259,8 +259,6 @@ Add answers to the following questions to your report.
 
 6. Do you see a different result than before? If so, why?
 7. Which result is more "correct"? If someone asked you which system you should use, which methodology gives you a more reliable answer?
-
-.. _submission:
 
 Submission
 ----------
