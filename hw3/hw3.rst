@@ -9,7 +9,7 @@ Due: Monday, 13 November 2017 at 3:10 PM
 ----------------------------------------
 
 Submission of your code and your report will be done through Canvas_.
-See the `submission section`_ below for more information.
+See the Submission_ section below for more information.
 
 .. _Canvas: https://canvas.ucdavis.edu/courses/146759
 
@@ -69,10 +69,13 @@ Thus, you will have eight different stat dumps when running the program.
 Compiling
 ~~~~~~~~~
 
+**Note:** Make sure you are using ``-O1`` optimization for all compilation, unless it is stated otherwise!
+
 Once you checkout the ``hw3`` branch, you can compile the ``daxpy`` program for ARM on the CSIF by using ``make``.
-If you insist on using your own device, you can follow the `documentation on cross compiling from ARM`_. 
-**Important**: If you set up the cross compiler on your own system, you must modify the Makefile to work on your system.
-**Make sure you are using -O1 optimization for all compilation unless it is stated otherwise!!!**
+If you insist on using your own device, you can follow the `documentation on cross compiling from ARM`_.
+
+The Makefile assumes that you are on a CSIF machine.
+If you are on your own machine, you will need to edit the Makefile to point to the cross compiler you downloaded.
 
 You will have to recompile gem5 to use the ARM ISA.
 To compile gem5 with the ARM ISA instead of x86, use the same command, but substitute ARM for x86 as below.
@@ -125,11 +128,11 @@ Answer the following question in your report.
 #. How did you prove that your unrolled loops are generating the correct results?
 
 Once you have applied loop unrolling to the functions, run the application and measure the following for each function: CPI, time, and instructions.
-**Note: Do not use the sim_insts statistic at the top of the statistics file**.
-Instead use the committedInsts statistic from the CPU.
+**Note:** Do not use the ``sim_insts`` statistic at the top of the statistics file.
+Instead, use the ``committedInsts`` statistic from the CPU.
 
 Also, be careful to look at the correct statistics dump.
-The stats.txt file will have a number of different dumps so make sure you are looking at the dump for the function you care about.
+The stats.txt file will have a number of different dumps, so make sure you are looking at the dump for the function you care about.
 There are also dumps for the initialization and cleanup at the end that should be ignored.
 
 Answer the following question in your report.
@@ -138,8 +141,6 @@ Answer the following question in your report.
 
 .. _Wikipedia: https://en.wikipedia.org/wiki/Loop_unrolling
 .. _good YouTube videos: https://www.youtube.com/watch?v=hsQj7n-8Q3A
-
-.. _earlier:
 
 Increase the Core Resources
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -176,14 +177,14 @@ You can find more information about ``objdump`` either by looking at the ``man``
 Again, once you get the ``objdump`` command working, you may want to turn it into a shell script.
 
 `Another video from the Georgia Tech class`_ provides a good overview of how to get lower CPI by rearranging instructions.
-You can also use techniques like software pipelining (from the Rau paper) and explained more clearly on wiki_.
-
-.. _wiki: https://en.wikipedia.org/wiki/Software_pipelining
+You can also use techniques like software pipelining from the Rau paper.
+This is explained more clearly on `another Wikipedia article`_.
 
 Answer the following question in your report.
 
 4. How did you further optimize each function? Did your optimizations change the behavior as expected (e.g., improve performance, lower CPI)?
 
+.. _another Wikipedia article: https://en.wikipedia.org/wiki/Software_pipelining
 .. _Another video from the Georgia Tech class: https://www.youtube.com/watch?v=2nx0ZCg5D9g
 
 Use the Compiler to Optimize
@@ -207,13 +208,13 @@ In this assignment, we were executing very simple loops. Most programs are much 
 
 6. Do you think it's ever worth hand-optimizing your code, or do you think the compiler optimizations are good enough?
 
-If you use proprietary compilers, such as Intel's compiler for Intel machines, you will see better optimized code than what you saw in this assignment.
+If you use proprietary compilers, such as Intel's compiler for Intel machines, you will see even better optimized code than what you saw in this assignment.
 
 Extra Credit
 ~~~~~~~~~~~~
 
 The MinorCPU, which is the model that the HPI core is based on, is a very flexible CPU model.
-All of the parameters for the HPI CPU can be found in the ``HPI.py`` file that we modified earlier_.
+All of the parameters for the HPI CPU can be found in the ``HPI.py`` file that we modified earlier__.
 
 Can you modify these parameters (specifically in the ``HPI`` class) to achieve even higher performance and lower CPI for the loops?
 You can choose to concentrate on only one version of the loops out of the four versions above.
@@ -222,7 +223,7 @@ Answer the following question in your report.
 
 7. How did you modify the hardware? Was it effective?
 
-.. _submission section:
+__ `Increase the Core Resources`_
 
 Submission
 ----------
@@ -240,7 +241,7 @@ Assignments will not be accepted for late submission four days after the due dat
 
 For your convenience, all the questions to be answered in the report are repeated below.
 
-#. How did you prove that your unrolled loops were correct code?
+#. How did you prove that your unrolled loops are generating the correct results?
 #. Does loop unrolling provide an improvement? Answer for each function. What kind of hazard does loop unrolling decrease?
 #. What effects does increasing the hardware have on both the unrolled and non-unrolled functions? What hazard does adding more hardware decrease?
 #. How did you further optimize each function? Did your optimizations change the behavior as expected (e.g., improve performance, lower CPI)?
