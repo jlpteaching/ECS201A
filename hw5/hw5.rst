@@ -1,9 +1,9 @@
 :Author: Jason Lowe-Power
 :Editor: Justin Perona
 
-=======================
-ECS 201A - Homework (?)
-=======================
+=====================
+ECS 201A - Homework 5
+=====================
 
 Due: (?) at (?)
 ---------------
