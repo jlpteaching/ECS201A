@@ -197,8 +197,6 @@ Not all reviews for a paper will be graded.
 If your review is not graded, it will not count against your grade.
 If you do not submit a review, however, you will get a 0 for that review.
 
-.. _above:
-
 Quizzes
 ~~~~~~~
 
@@ -276,7 +274,9 @@ Every computer architect should have a copy!
 
 There is both a physical and a digital copy available.
 You will be doing *a lot* of reading from the book, so I suggest you choose what is most comfortable for you.
-We will also have open book quizzes (see above_), and you will *not* be able to use the electronic copy during the quizzes.
+We will also have open book quizzes (see above__), and you will *not* be able to use the electronic copy during the quizzes.
+
+__ `Quizzes`_
 
 A PDF version of the book is available through ACM__.
 Getting the book through ACM requires an ACM membership and buying access to the ACM Digital Library.
@@ -294,13 +294,13 @@ We will be reading about one paper per week from the current computer architectu
 Each discussion you will be assigned at least one paper to review, although there may be other optional papers for you to read or skim.
 You are not *required* to review the optional papers, but they will be discussed in class and will further contribute to your understanding.
 
-The `schedule below`_ has links to the papers that will work if you are on campus or logged in with the `library VPN`_.
+The `schedule below`__ has links to the papers that will work if you are on campus or logged in with the `library VPN`_.
 You can find PDFs of these papers on Canvas_.
 
+__ `below`_
 .. _library VPN: https://www.library.ucdavis.edu/service/connect-from-off-campus/
 
 .. _below:
-.. _schedule below:
 
 Schedule
 ~~~~~~~~
