@@ -38,6 +38,7 @@ Discussion 7,13-Nov,"Homework 3 Due, Discussion",
 ,,Review: Dynamic Branch Prediction with Perceptrons,https://www.cs.utexas.edu/~lin/papers/hpca01.pdf
 Lecture 14,14-Nov,Advanced Pipelining 2,H&P: 3.4-3.5
 Lecture 15,16-Nov,Advanced Pipelining 3,H&P: 3.5-3.7
+,,Homework 4 Release: Out-of-Order Processors,https://github.com/jlpteaching/17fq-cs201a/blob/master/hw4/hw4.rst
 Discussion 8,20-Nov,Quiz 2,
 ,,Paper Discussion 7,
 ,,Review: TBA,TBA
@@ -46,6 +47,7 @@ Thanksgiving,23-Nov,NO CLASS,
 Discussion 9,27-Nov,"Homework 4 Due, Discussion",
 ,,Paper Discussion 8,
 ,,Review: TBA,TBA
+,,Homework 5 Release: Concurrency in Cilk+,https://github.com/jlpteaching/17fq-cs201a/blob/master/hw5/hw5.rst
 Lecture 17,28-Nov,Parallelism,
 Lecture 18,30-Nov,Issues with Parallelism,
 Discussion 10,4-Dec,Quiz 3,
