@@ -50,8 +50,14 @@ You should be able to simply checkout the new branch:
     git checkout hw4
 
 Remember to recompile gem5 after checking out the ``hw4`` branch.
-The compilation command is the same as in homework 3.
 I have made a small change to gem5 to enable you to model a wider pipeline than normally reasonable.
+The compilation command is the same as in homework 3:
+
+.. code-block:: sh
+
+    scons build/ARM/gem5.opt -jX
+
+where ``X`` in ``-jX`` is the number of cores in your machine, plus one.
 
 Be careful if you plan on using your own machine.
 You will need to download a cross-compiler, as in the last assignment.
@@ -89,7 +95,8 @@ To run ``blackscholes``, use the following:
     build/ARM/gem5.opt --outdir=<your outdir here> configs/example/se.py \
     --cpu-type=hw4_core -c blackscholes -o "1 in_256.txt out" --l2cache --caches
 
-I encourage you to explicitly set a different output directory for each workload and for each experiment you run with the workloads.
+You will definitely want to turn the above commands into shell scripts.
+Also, I encourage you to explicitly set a different output directory for each workload and for each experiment you run with the workloads.
 This will make the next step easier.
 
 These command lines will use the ``se.py`` run script.
