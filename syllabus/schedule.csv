@@ -38,12 +38,11 @@ Discussion 7,13-Nov,"Homework 3 Due, Discussion",
 ,,Review: Dynamic Branch Prediction with Perceptrons,https://www.cs.utexas.edu/~lin/papers/hpca01.pdf
 Lecture 14,14-Nov,Advanced Pipelining 2,H&P: 3.4-3.5
 Lecture 15,16-Nov,Advanced Pipelining 3,H&P: 3.5-3.7
-,,Homework 4 Release: Out-of-Order Processors,https://github.com/jlpteaching/17fq-cs201a/blob/master/hw4/hw4.rst
+,,Homework 4 Release: Performance Metrics for Out-of-Order Processors,https://github.com/jlpteaching/17fq-cs201a/blob/master/hw4/hw4.rst
 Discussion 8,20-Nov,Quiz 2,
 ,,Paper Discussion 7,
-,,"Review: 
-Dynamic speculation and synchronization of data dependences",https://dl.acm.org/citation.cfm?id=264189
-,,"More info: Google WARF '752 patent",https://www.google.com/patents/US5781752
+,,Review: Dynamic Speculation and Synchronization of Data Dependences,http://ftp.cs.wisc.edu/sohi/papers/1997/isca.data-dep-spec.pdf
+,,Optional Background: WARF ‘752 Patent (from Google),https://www.google.com/patents/US5781752
 Lecture 16,21-Nov,Limitations of ILP and Speculation,H&P: 3.9-3.14
 Thanksgiving,23-Nov,NO CLASS,
 Discussion 9,27-Nov,"Homework 4 Due, Discussion",
