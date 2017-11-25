@@ -2,6 +2,7 @@
 :Editor: Justin Perona
 
 .. _Canvas: https://canvas.ucdavis.edu/courses/146759
+.. _Github: https://github.com/jlpteaching/17fq-cs201a
 .. _Gradescope: https://gradescope.com/courses/11391
 .. _Piazza: https://piazza.com/class/j7z54vw7a5r2sl
 .. _Media Gallery: https://canvas.ucdavis.edu/courses/146759/external_tools/970
@@ -53,10 +54,16 @@ We will be using Canvas_ for much of the course administration.
 This document, as well as all other downloads, are available on the Canvas site.
 You will use Canvas for turning in your homeworks and paper reviews.
 
+Github
+~~~~~~
+
+We will use Github_ to host the latest copies of this document, the course schedule, and the homeworks.
+If I make changes to those documents, they will appear first on Github.
+
 Gradescope
 ~~~~~~~~~~
 
-We will use Gradescope_ for quizzes, the midterm, and the final.
+We will use Gradescope_ for returning quizzes, the midterm, and the final.
 Gradescope gives you a graded PDF version of your test, along with a rubric, immediately after we're done grading.
 You will receive an email from Gradescope to make your account after we grade the first quiz.
 
@@ -71,7 +78,21 @@ It's best to ask your questions on Piazza.
 That way, all of your classmates can see the answer instead of emailing Justin or me.
 Additionally, you might get a much faster response from one of your classmates!
 
-Exam Conflicts
+Through asking and answering questions on Piazza, you improve your understanding of the material, and improve other students' understanding as well.
+As an incentive to answer other students' questions and participate, I will drop your lowest quiz score if you consistently participate on Piazza.
+I will check Piazza participation and drop the lowest score at the end of the quarter.
+
+In the spirit of the above, please ask questions as public questions on Piazza, if possible.
+This way, your question, and the answer to your question, can help somebody else who might have the same question.
+We will change questions asked privately to public, if we deem it appropriate.
+If your question involves code you've written, or is about a personal issue, we will leave those private.
+
+Regrade Requests
+~~~~~~~~~~~~~~~~
+
+Regrade requests must be made within one week of the return of the assignment or test.
+
+Accommodations
 ~~~~~~~~~~~~~~
 
 The exam schedule is available on Canvas_, or below_.
@@ -80,8 +101,8 @@ Per `official UC Davis policy`_, if you have an accommodation request from the `
 .. _official UC Davis policy: http://catalog.ucdavis.edu/academicinfo/exams.html
 .. _Student Disability Center: https://sdc.ucdavis.edu/
 
-Other Information
-~~~~~~~~~~~~~~~~~
+Lecture Videos
+~~~~~~~~~~~~~~
 
 The lectures and discussion will be recorded.
 The videos for each class will be available on Canvas_ soon after the lecture.
@@ -194,8 +215,6 @@ Not all reviews for a paper will be graded.
 If your review is not graded, it will not count against your grade.
 If you do not submit a review, however, you will get a 0 for that review.
 
-.. _above:
-
 Quizzes
 ~~~~~~~
 
@@ -205,6 +224,7 @@ These quizzes are meant for both you and me, to gauge your current understanding
 There will be a mix of questions from the book, and new questions.
 
 The quizzes will be open book, open paper, and open notes.
+Calculators are allowed, though unnecessary.
 However, I can't allow electronic versions of books, papers, or notes.
 It would be too easy for you to just Ctrl-F the answer!
 
@@ -218,6 +238,9 @@ The midterm will be given in class on 31 October 2017.
 
 The final is scheduled for Tuesday, 12 December 2017, from 1:00 - 3:00 PM.
 The location is the same as the lecture room.
+
+Both the midterm and the final are closed book, closed paper, and closed notes.
+No electronic devices (including calculators) are allowed.
 
 Grading
 -------
@@ -240,7 +263,6 @@ Midterm       20%
 
 Final         30%
 ============= ===
-
 
 Academic Misconduct
 --------------------
@@ -270,7 +292,9 @@ Every computer architect should have a copy!
 
 There is both a physical and a digital copy available.
 You will be doing *a lot* of reading from the book, so I suggest you choose what is most comfortable for you.
-We will also have open book quizzes (see above_), and you will *not* be able to use the electronic copy during the quizzes.
+We will also have open book quizzes (see above__), and you will *not* be able to use the electronic copy during the quizzes.
+
+__ `Quizzes`_
 
 A PDF version of the book is available through ACM__.
 Getting the book through ACM requires an ACM membership and buying access to the ACM Digital Library.
@@ -288,13 +312,13 @@ We will be reading about one paper per week from the current computer architectu
 Each discussion you will be assigned at least one paper to review, although there may be other optional papers for you to read or skim.
 You are not *required* to review the optional papers, but they will be discussed in class and will further contribute to your understanding.
 
-The `schedule below`_ has links to the papers that will work if you are on campus or logged in with the `library VPN`_.
+The `schedule below`__ has links to the papers that will work if you are on campus or logged in with the `library VPN`_.
 You can find PDFs of these papers on Canvas_.
 
+__ `below`_
 .. _library VPN: https://www.library.ucdavis.edu/service/connect-from-off-campus/
 
 .. _below:
-.. _schedule below:
 
 Schedule
 ~~~~~~~~
