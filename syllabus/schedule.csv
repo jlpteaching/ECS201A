@@ -47,7 +47,7 @@ Lecture 16,21-Nov,Limitations of ILP and Speculation,H&P: 3.9-3.14
 Thanksgiving,23-Nov,NO CLASS,
 Discussion 9,27-Nov,"Homework 4 Due, Discussion",
 ,,Paper Discussion 8,
-,,Review: TBA,TBA
+,,Review: The Implementation of the Cilk-5 Multithreaded Language,http://supertech.csail.mit.edu/papers/cilk5.pdf
 ,,Homework 5 Release: Concurrency in Cilk+,https://github.com/jlpteaching/17fq-cs201a/blob/master/hw5/hw5.rst
 Lecture 17,28-Nov,Parallelism,
 Lecture 18,30-Nov,Issues with Parallelism,
