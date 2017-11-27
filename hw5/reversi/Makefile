@@ -1,7 +1,13 @@
+# This file was adapted from template files provided by David Wood.
+# This was sourced from Homework 3 of his CS 758 at UW - Madison.
+# http://pages.cs.wisc.edu/~david/courses/cs758/Fall2016/wiki/index.php?n=Main.Homework3
+
+# That, in turn, was based off an assignment by John Mellor-Crummey at Rice University.
+
 CXX = gcc
 OUTPUT = reversi
 
-DEBUG_MODE = TRUE
+DEBUG = TRUE
 
 BIN_DIR = ./bin
 INC_DIR = ./include
@@ -15,12 +21,12 @@ OBJS = $(OBJ_DIR)/hwtimer.o \
 	   $(OBJ_DIR)/reversi-good-ai.o
 
 INCLUDES += -I$(INC_DIR)
-CFLAGS = -Wall $(INCLUDES)
+CFLAGS = -Wall -Wextra $(INCLUDES)
 
-ifdef DEBUG_MODE
+ifdef DEBUG
 	CFLAGS += -g
 else
-	CFLAGS += -O3
+	CFLAGS += -O2
 endif
 
 all: directories $(BIN_DIR)/$(OUTPUT)
@@ -36,4 +42,4 @@ directories:
 	mkdir -p $(BIN_DIR)
 
 clean:
-	-rm $(OBJ_DIR)/*.o $(BIN_DIR)/$(OUTPUT)
+	rm -f $(OBJ_DIR)/*.o $(BIN_DIR)/$(OUTPUT)

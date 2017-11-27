@@ -1,3 +1,11 @@
+/*
+    This file was adapted from template files provided by David Wood.
+    This was sourced from Homework 3 of his CS 758 at UW - Madison.
+    http://pages.cs.wisc.edu/~david/courses/cs758/Fall2016/wiki/index.php?n=Main.Homework3
+
+    That, in turn, was based off an assignment by John Mellor-Crummey at Rice University.
+*/
+
 #ifndef HWTIMER_H
 #define HWTIMER_H
 
@@ -7,7 +15,8 @@
 
 typedef uint64_t hrtime_t;
 
-typedef struct {
+typedef struct
+{
     hrtime_t start;
     hrtime_t end;
     double cpuMHz;
