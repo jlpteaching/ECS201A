@@ -27,6 +27,7 @@ This is so that everybody uses a consistent CPU.
 All the CSIF machines have an Intel Haswell i7-4790, with four physical cores and eight logical cores.
 
 This assignment is adapted from `Homework 3`_ of David Wood's CS 758 at University of Wisconsin - Madison.
+That assignment, in turn, was adapted from an assignment by John Mellor-Crummey at Rice University.
 
 .. _Cilk Plus: https://www.cilkplus.org/
 .. _Homework 3: http://pages.cs.wisc.edu/~david/courses/cs758/Fall2016/wiki/index.php?n=Main.Homework3
@@ -76,12 +77,12 @@ You can also play Reversi online on various websites, if you want to get a bette
 Reversi Program
 ~~~~~~~~~~~~~~~
 
-A sequential program that enables two human players to play Reversi is included in the given files.
+A sequential program that enables two players, human or AI, to play Reversi is included in the given files.
 You may use this program as you see fit to get a jump start on your assignment.
 Feel free to use the code directly as the basis for your parallel solution.
 
 You may be uncomfortable with the board representation, which uses bits of a 64-bit integer.
-If so, you may prefer to rewrite the code using a 64-element array of characters as the board representation.
+If so, you may prefer to rewrite the board representation to use an 8x8 array of characters.
 While this is less compact, it is equally acceptable.
 
 If you would find it more intuitive to develop your own solution from scratch rather than building upon the code that is provided, that is fine, but not necessary.
@@ -161,21 +162,23 @@ It times the second player of the game, giving both total runtime and per-turn r
 1. Sequential Minimax
 ~~~~~~~~~~~~~~~~~~~~~
 
-Implement a sequential version of ``GoodAITurn()`` in ``reversi-good-ai.c``.
-This is where you will implement the minimax algorithm with a depth of ``DEPTH``, the depth parameter which is defined at the top of ``reversi-good-ai.c``.
+Implement the sequential version of your minimax algorithm ``GoodAITurnSequential()`` in ``reversi-good-ai.c``.
+Your algorithm needs to consider up to a depth of ``DEPTH``, the depth parameter which is defined at the top of ``reversi-good-ai.c``.
+
+Once you are done, modify ``main()`` in ``reversi.c`` to use your algorithm for the white player.
 
 Prove to yourself that your minimax algorithm is working correctly.
 Make sure that your algorithm makes the best decision within the working depth.
 
 Answer the following question in your report.
 
-#. How did you prove that your minimax algorithm was implemented correctly?
+#. How did you ensure that your minimax algorithm was implemented correctly?
 
 2. Parallel Minimax
 ~~~~~~~~~~~~~~~~~~~
 
-Rename your sequential version into ``GoodAITurnSequential()``.
-This time, implement a parallel version of ``GoodAITurn()``.
+This time, implement the parallel version of your minimax algorithm``GoodAITurnParallel()`` in ``reversi-good-ai.c``.
+Again, modify ``main()`` in ``reversi.c`` to use your new algorithm.
 
 Hint: You may want to use reducer objects.
 How to use reducers can be found on the `Cilk Plus website`_.
@@ -257,7 +260,7 @@ Assignments will not be accepted for late submission four days after the due dat
 
 For your convenience, all the questions to be answered in the report are repeated below.
 
-#. How did you prove that your minimax algorithm was implemented correctly?
+#. How did you ensure that your minimax algorithm was implemented correctly?
 #. How did you feel about creating the parallelized version of your minimax algorithm? Was it difficult to turn your sequential code into parallel code?
 #. Describe your experience with using ``cilkscreen``. Did you find any data races? If so, how did you manage to fix them?
 #. Graph your measurements of the parallelism found by ``cilkview`` with respect to the lookahead depth. Give a couple sentences of why you think the graph looks like it does. Did it look like what you expected?
