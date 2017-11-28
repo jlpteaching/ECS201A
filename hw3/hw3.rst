@@ -136,6 +136,8 @@ Answer the following question in your report.
 
 2. Does loop unrolling provide an improvement? Answer for each function. What kind of hazard does loop unrolling decrease?
 
+3. How many times should you unroll the loops? Is it the same for each loop? What happens if you don't unroll enough or unroll too much?
+
 .. _Wikipedia: https://en.wikipedia.org/wiki/Loop_unrolling
 .. _good YouTube videos: https://www.youtube.com/watch?v=hsQj7n-8Q3A
 
