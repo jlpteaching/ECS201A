@@ -47,14 +47,14 @@ Lecture 16,21-Nov,Limitations of ILP and Speculation,H&P: 3.9-3.14
 Thanksgiving,23-Nov,NO CLASS,
 Discussion 9,27-Nov,"Homework 4 Due, Discussion",
 ,,Paper Discussion 8,
-,,Review: TBA,TBA
+,,Review: The Implementation of the Cilk-5 Multithreaded Language,http://supertech.csail.mit.edu/papers/cilk5.pdf
 ,,Homework 5 Release: Concurrency in Cilk+,https://github.com/jlpteaching/17fq-cs201a/blob/master/hw5/hw5.rst
-Lecture 17,28-Nov,Parallelism,
-Lecture 18,30-Nov,Issues with Parallelism,
+Lecture 17,28-Nov,Data-level Parallelism,"H&P: pages 9, 10. Sections 4.1, 4.3, 4.4 (skim), 4.6-4.7"
+Lecture 18,30-Nov,Thread-level Parallelism,"H&P: 5.1, 5.2 (skim), 5.5-5.6"
 Discussion 10,4-Dec,Quiz 3,
 ,,Paper 9 Discussion,
 ,,Review: Attack of the Killer Microseconds,https://dl.acm.org/citation.cfm?id=3015146
 Lecture 19,5-Dec,Reliability and Security,
-Lecture 20,7-Dec,"Slack, Review for Final",
+Lecture 20,7-Dec,Other topics ,
 ,,"Homework 5 Due, Discussion",
 Final,12-Dec,"1:00 – 3:00 PM, 226 Wellman",
