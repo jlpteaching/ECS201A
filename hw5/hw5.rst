@@ -22,9 +22,9 @@ Overview
 In this assignment, you will practice writing programs with `Cilk Plus`_.
 You will also get practice debugging with the Cilk Plus race detector, ``cilkscreen``, and understanding performance using the ``cilkview`` tool.
 
-For this assignment, all work must be done on the CSIF.
+For this assignment, all work must be done on the CSIF machines ``pc21`` and up.
 This is so that everybody uses a consistent CPU.
-All the CSIF machines have an Intel Haswell i7-4790, with four physical cores and eight logical cores.
+All the CSIF machines ``pc21`` and upward have an Intel Haswell i7-4790K, with four physical cores and eight logical cores.
 
 This assignment is adapted from `Homework 3`_ of David Wood's CS 758 at University of Wisconsin - Madison.
 That assignment, in turn, was adapted from an assignment by John Mellor-Crummey at Rice University.
