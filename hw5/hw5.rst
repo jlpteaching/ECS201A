@@ -44,6 +44,7 @@ They are listed below:
 - ``cilk_sync``, which is equivalent to a join in a `fork-join model`_.
 - ``cilk_for``, which is used for parallelizing for loops.
 
+It also adds some pragmas and many functions.
 The following is taken from the `Wikipedia article on Cilk`_:
 
     The biggest principle behind the design of the Cilk language is that the programmer should be responsible for exposing the parallelism, identifying elements that can safely be executed in parallel; it should then be left to the run-time environment, particularly the scheduler, to decide during execution how to actually divide the work between processors.
@@ -85,7 +86,7 @@ The Cilk tools should report that they cannot find any Cilk code.
 Assignment
 ----------
 
-For this assignment, you will be parallelizing an AI for the game *Reversi*.
+For this assignment, you will be creating and parallelizing an AI for the game *Reversi*.
 Reversi, also known as *Othello*, is a strategy game played on an 8 x 8 game board.
 The rules to the game and a brief explanation of strategy issues are available on the `Wikipedia page for Reversi`_.
 You can also play Reversi online on various websites, if you want to get a better feel for it.
@@ -109,7 +110,7 @@ You may be uncomfortable with the board representation, which uses bits of a 64-
 If so, you may prefer to rewrite the board representation to use an 8 by 8 array of characters.
 While this is less compact, it is equally acceptable.
 
-If you would find it more intuitive to develop your own solution from scratch, rather than building upon the code that is provided, that is fine, but not necessary (nor recommended).
+If you would find it more intuitive to develop your own solution from scratch, rather than building upon the code that is provided, that is fine, but not necessary nor recommended.
 The template provided is in pure (C99) C.
 Cilk has extensions for both C and C++, so you may choose either if you want to write your solution from scratch.
 
@@ -136,6 +137,8 @@ Minimax Algorithm
 
 To implement an AI for Reversi, you will use the `Minimax algorithm`_.
 The minimax algorithm is a recursive algorithm for choosing the next move in an ``n``-player game, usually a two-player game.
+The minimax algorithm fits naturally into Cilk's task parallel programming model due to its recursive nature.
+
 From Wikipedia, the pseudo-code for the algorithm is:
 
 .. code-block:: none
@@ -160,8 +163,6 @@ From Wikipedia, the pseudo-code for the algorithm is:
 
 .. _Minimax algorithm: https://en.wikipedia.org/wiki/Minimax
 
-The minimax algorithm fits naturally into Cilk's task parallel programming model due to its recursive nature.
-
 Given Files
 ~~~~~~~~~~~
 
@@ -184,7 +185,7 @@ The seed chosen in the template gives an interesting game, and should be used wh
 You can uncomment the random seed in ``main()`` of ``reversi.c`` while debugging to produce more than one game scenario.
 
 A timing library is also included in ``src/hwtimer.c`` and ``include/hwtimer.h``.
-It times the second player of the game, giving both total runtime and per-turn runtime.
+It times the second player of the game, giving total runtime and average per-turn runtime.
 
 1. Sequential Minimax
 ~~~~~~~~~~~~~~~~~~~~~
@@ -207,17 +208,20 @@ Answer the following question in your report.
 This time, implement the parallel version of your minimax algorithm ``GoodAITurnParallel()`` in ``reversi-good-ai.c``.
 Again, modify ``main()`` in ``reversi.c`` to use your new algorithm.
 
-Hint: You may want to use reducer objects.
-How to use reducers can be found on the `Cilk Plus website`_.
+`Reducer objects`_ can be useful for improving performance.
+Unfortunately, they do not work with ``cilkscreen``, which we will be using for the next step.
+Do not use them for this assignment.
 
+If you're curious about reducers, check the `link above`__ for more details.
 If you want to understand how reducers and other hyper-objects are implemented, you can look at `this paper by the Cilk creators`_.
-This is optional, don't feel that you have to understand all the details.
+This is optional, given that you won't be using them at all in this assignment.
 
 Answer the following question in your report.
 
 2. How did you feel about creating the parallelized version of your minimax algorithm? Was it difficult to turn your sequential code into parallel code?
 
-.. _Cilk Plus website: https://www.cilkplus.org/docs/doxygen/include-dir/page_reducers_in_c.html
+.. _Reducer objects: https://www.cilkplus.org/docs/doxygen/include-dir/page_reducers_in_c.html
+__ `Reducer objects`_
 .. _this paper by the Cilk creators: http://www.fftw.org/~athena/papers/hyper.pdf
 
 3. Check for Data Races
@@ -234,10 +238,11 @@ You can run ``cilkscreen`` using the shell script in the repository:
 
     ./cilkscreen.sh
 
-Careful, ``cilkscreen`` takes a very long time to run.
-You will want to do something else in the meantime.
+``cilkscreen`` does takes a while to run, unfortunately.
+You may want to leave it running and come back later.
 
-If ``cilkscreen`` reports races, make sure that you compile your program with the ``-g`` flag by uncommenting the ``DEBUG`` variable in the ``Makefile`` and run it again.
+If ``cilkscreen`` reports races, make sure that you compile your program with the ``-g`` flag.
+Uncomment the ``DEBUG`` variable in the ``Makefile`` and compile your program again.
 Executables compiled with ``-g`` have more detailed race reports, which will help you identify the references involved in the data races.
 
 Answer the following question in your report:
@@ -266,31 +271,30 @@ You can run ``cilkview`` using the shell script in the repository:
 
 Unlike ``cilkscreen``, ``cilkview`` takes far less time to run.
 
-The script will save the output to ``cilkoutput.txt``.
+The shell script will save the output to ``cilkoutput.txt``.
 Make sure to rename the file appropriately, so that you don't overwrite it.
 You will need to turn in the ``cilkview`` output file for each of your runs.
 
 Answer the following question in your report.
 
-4. Graph your measurements of the parallelism found by ``cilkview`` with respect to the lookahead depth. Give a couple sentences of why you think the graph looks like it does. Did it look like what you expected?
+4. Graph your measurements of the parallelism found by ``cilkview`` with respect to the lookahead depth. Explain why you think the graph looks like it does. Did it look like what you expected?
 5. What is *burdened parallelism*, as reported by ``cilkview``? How does the burdened parallelism scale with the lookahead depth? How does it scale with the work and span reported by ``cilkview``?
-6. Given the output from ``cilkview``, how do you think this program will perform on 16 cores at each lookahead depth?
-7. Again, given the output from ``cilkview``, how do you think this program will perform on 64 cores at each lookahead depth?
+6. Given the output from ``cilkview``, how do you think this program will perform on 16 cores at each lookahead depth? How about 64 cores at each lookahead depth?
 
 5. Lookahead Depth and Workers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Run both your sequential and parallel versions of Reversi for lookahead depths of 1, 2, 3, 4, 5.
+Run both your sequential and parallel versions of Reversi for lookahead depths of 1, 2, 3, 4, and 5.
 For a depth of 5, run your parallel version with 1, 2, 4, and 8 threads.
 For the other depths, run your parallel version with 4 threads.
 
 You do not need to use ``cilkview`` for this problem.
-Instead, make sure to copy the times for each run.
-You should have 5 sequential times and 8 parallel times.
+Instead, make sure to record the time sets for each run.
+You should have 5 sequential time sets and 8 parallel time sets.
 
 You can specify the number of threads for Cilk to use by changing the ``CILK_NWORKERS`` environment variable.
 The CSIF uses ``tcsh`` as its default shell.
-You can set the environment variable using the following command:
+You can set ``CILK_NWORKERS`` in ``tcsh`` using the following command:
 
 .. code-block:: sh
 
@@ -308,8 +312,8 @@ If you want to verify that ``CILK_NWORKERS`` is set correctly, use the following
 
 Answer the following questions in your report.
 
-8. How does the speedup of your parallel implementation of Reversi scale with the lookahead depth? Why do you think this is the case? Does it look like you expected?
-9. How does your parallel version of Reversi scale with the number of threads? In this particular case, how well did ``cilkview`` predict the speedup? Explain why or why not ``cilkview`` predicted the performance.
+7. How does the speedup of your parallel implementation of Reversi scale with the lookahead depth? Why do you think this is the case? Does it look like you expected?
+8. How does your parallel version of Reversi scale with the number of threads? In this particular case, how well did ``cilkview`` predict the speedup? Explain why or why not ``cilkview`` predicted the performance.
 
 Submission
 ----------
@@ -330,9 +334,8 @@ For your convenience, all the questions to be answered in the report are repeate
 #. How did you ensure that your minimax algorithm was implemented correctly?
 #. How did you feel about creating the parallelized version of your minimax algorithm? Was it difficult to turn your sequential code into parallel code?
 #. Describe your experience with ``cilkscreen``. Did you find any data races? If so, how did you manage to fix them?
-#. Graph your measurements of the parallelism found by ``cilkview`` with respect to the lookahead depth. Give a couple sentences of why you think the graph looks like it does. Did it look like what you expected?
+#. Graph your measurements of the parallelism found by ``cilkview`` with respect to the lookahead depth. Explain why you think the graph looks like it does. Did it look like what you expected?
 #. What is *burdened parallelism*, as reported by ``cilkview``? How does the burdened parallelism scale with the lookahead depth? How does it scale with the work and span reported by ``cilkview``?
-#. Given the output from ``cilkview``, how do you think this program will perform on 16 cores at each lookahead depth?
-#. Again, given the output from ``cilkview``, how do you think this program will perform on 64 cores at each lookahead depth?
+#. Given the output from ``cilkview``, how do you think this program will perform on 16 cores at each lookahead depth? How about 64 cores at each lookahead depth?
 #. How does the speedup of your parallel implementation of Reversi scale with the lookahead depth? Why do you think this is the case? Does it look like you expected?
 #. How does your parallel version of Reversi scale with the number of threads? In this particular case, how well did ``cilkview`` predict the speedup? Explain why or why not ``cilkview`` predicted the performance.
