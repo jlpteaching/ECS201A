@@ -1,6 +1,9 @@
 :Author: Jason Lowe-Power
 :Editor: Justin Perona
 
+(TO DO) Convert the Reversi code from C to C++.
+Also, potentially find a machine with 16+ cores to compare on, sort of like what David Wood did with the Xeon Phi?
+
 =====================
 ECS 201A - Homework 5
 =====================
