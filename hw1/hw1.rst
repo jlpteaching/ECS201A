@@ -103,7 +103,7 @@ When you are compiling, you will need to pass the following option to SCons:
 
 The entire compilation command should look like this:
 
-.. code-block::sh
+.. code-block:: sh
 
     scons build/X86/gem5.opt -jX \
     CPU_MODELS=AtomicSimpleCPU,TimingSimpleCPU,O3CPU,MinorCPU
